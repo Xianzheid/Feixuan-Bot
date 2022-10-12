@@ -3,11 +3,11 @@
 Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu kakak !
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 <p align="center">
-    <img src="https://i.ibb.co/XZrK6yQ/transformers.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://i.ibb.co/TYnJgRD/Pics-Art-10-12-09-43-10.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">WH MODS BOT - MD</h1>
+<h1 align="center">Xianzhe ID</h1>
 <p align="center">
-  <a href="https://github.com/WH-MODS-BOT"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=WH+MODS+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+WH+MODS+DEV;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
+  <a href="https://github.com/xianzheid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=WH+MODS+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+WH+MODS+DEV;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
 </p>
 
 <p align="center">
@@ -23,19 +23,19 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
-  <a href="https://wa.me/6285736178354">
+  <a href="https://wa.me/6285358805324">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/_ctzhid_">
+  <a href="https://www.instagram.com/xianzhe_xx">
     <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow">
+  <a href="https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9A">
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
   </a> &nbsp;&nbsp;
 ---------
 
-## ```Whatsapp``` <a href="https://wa.me/6282127487538"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-[![BOT WHATSAPP](https://img.shields.io/badge/Group%20All%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HQMa4AGBFKRBi4z4R0MnH4) 
+## ```Whatsapp``` <a href="https://wa.me/6285358805324"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+[![BOT WHATSAPP](https://img.shields.io/badge/Group%20Xianzhe%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A) 
 ---------
 
 #### a little about this bot
@@ -126,8 +126,8 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-cd fix-bot-v3
+git clone https://github.com/Xianzheid/XiaFeixuan-Bot
+cd XiaFeixuan-Bot
 npm install
 npm update
 ```
@@ -142,8 +142,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-cd fix-bot-v3
+git clone https://github.com/Xianzheid/XiaFeixuan-Bot
+cd XiaFeixuan-Bot
 npm install
 npm update
 ```
@@ -251,3 +251,4 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 
 ## ```Recode By ✏️```
 [![WH-MODS-BOT](https://github.com/WH-MODS-BOT.png?size=70)](https://github.com/WH-MODS-BOT)
+[![Xianzhe-ID](https://github.com/xianzheid.png?size=70)](https://github.com/xianzheid)

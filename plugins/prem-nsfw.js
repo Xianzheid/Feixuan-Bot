@@ -108,7 +108,7 @@ const sections = [
 	{title: `${(ch == true ? false : ahegao) == true ? p : f}` + "A • Ahegao", rowId: ".nsfw ahegao"},
 	{title: `${(ch == true ? false : anal) == true ? p:f}` + "A • Anal", rowId: ".nsfw anal"},
 	{title: `${(ch == true ? false : ass) == true ? p:f}` + "A • Ass", rowId: ".nsfw ass"},
-	{title: `${(ch == true ? false : blowjob) == true ? p:f}` + "B • BlowJob", rowId: ".nsfw blowjob"},
+	{title: `${(ch == true ? false : bdsm) == true ? p:f}` + "B • Bdsm", rowId: ".nsfw bdsm"},
 	{title: `${(ch == true ? false : cums) == true ? p:f}` + "C • Cumsluts", rowId: ".nsfw cums"},
 	{title: `${(ch == true ? false : ecchi) == true ? p:f}` + "E • Ecchi", rowId: ".nsfw ecchi"},
 	{title: `${(ch == true ? false : ero) == true ? p:f}` + "E • Ero", rowId: ".nsfw ero"},

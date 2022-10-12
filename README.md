@@ -2,20 +2,17 @@
 ## CATATAN
 Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!!
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+<h1 align="center">Xianzhe ID</h1>
 <p align="center">
     <img src="https://i.ibb.co/TYnJgRD/Pics-Art-10-12-09-43-10.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">Xianzhe ID</h1>
 <p align="center">
   <a href="https://github.com/xianzheid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=XiaFeixuan+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+Xianzhe+ID;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
 </p>
 
 <p align="center">
- <a href="#"><img title="XiaFeixuan-BOT" src="https://img.shields.io/badge/-WH--MODS--BOT--MD-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="XiaFeixuan-BOT" src="https://img.shields.io/badge/XiaFeixuan--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
-<p align="center">
-<a href="https://github.com/WH-MODS-BOT"><img title="Author 1" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
-<a href="https://github.com/xianzheid"><img title="Author 2" src="https://img.shields.io/badge/AUTHOR-Xianzhe-ID-green?style=for-the-badge&logo=github"></a>
 
 # Ambil Session Disini
 
@@ -32,13 +29,11 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!
   </a> &nbsp;&nbsp;
   <a href="https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9A">
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
-  </a> &nbsp;&nbsp;
----------
+  </a> &nbsp;&nbsp; 
 
-## ```Whatsapp``` <a href="https://wa.me/6285358805324"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-[![BOT WHATSAPP](https://img.shields.io/badge/Group%20Xianzhe%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A) 
----------
 
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A)
+---------
 #### a little about this bot
 - [x] **Fast Respon** 
 - [x] **Simple** 

@@ -1,6 +1,6 @@
 
 ## CATATAN
-Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu kakak !
+Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!!
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 <p align="center">
     <img src="https://i.ibb.co/TYnJgRD/Pics-Art-10-12-09-43-10.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
@@ -11,11 +11,12 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 </p>
 
 <p align="center">
- <a href="#"><img title="WH-MODS-BOT" src="https://img.shields.io/badge/-WH--MODS--BOT--MD-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="XiaFeixuan-BOT" src="https://img.shields.io/badge/-WH--MODS--BOT--MD-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/WH-MODS-BOT"><img title="Author" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
-    
+<a href="https://github.com/WH-MODS-BOT"><img title="Author 1" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/xianzheid"><img title="Author 2" src="https://img.shields.io/badge/AUTHOR-Xianzhe-ID-green?style=for-the-badge&logo=github"></a>
+
 # Ambil Session Disini
 
 > Buka [ Linknya Disini ](https://replit.com/@zeeoneofc/Session-Md?lite=1&outputonly=1#.replit) 

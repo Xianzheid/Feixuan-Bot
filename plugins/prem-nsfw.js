@@ -45,45 +45,45 @@ let xapi = '?APIKEY=ebb6251cc00f9c63'
 // • false = Free
 // • true = premium
 
-let ahegao = true
-let anal = true
-let ass = true
-let blowjob = true
-let cums = true
-let ecchi = true
-let ero = true
-let erofeet = true
-let erogirl = true
-let holoero = true
-let erokitsune = true
-let eroneko = true
-let eroyuri = true
-let feet = true
-let femdom = true
-let futanari = true
-let girlsolo = true
-let hentai = true
-let holo = true
-let jahy = true
-let kitsune = true
-let kuni = true
-let loli = true
-let manga = true
-let milf = true
-let mstrb = true
-let neko = true
-let panties = true
-let pussy = true
-let oppai = true
-let spank = true
-let tentacles = true
-let thighs = true
-let tits = true
-let trap = true
-let uniform = true
-let waifu = true
-let yaoi = true
-let yuri = true
+let ahegao = false
+let anal = false
+let ass = false
+let blowjob = false
+let cums = false
+let ecchi = false
+let ero = false
+let erofeet = false
+let erogirl = false
+let holoero = false
+let erokitsune = false
+let eroneko = false
+let eroyuri = false
+let feet = false
+let femdom = false
+let futanari = false
+let girlsolo = false
+let hentai = false
+let holo = false
+let jahy = false
+let kitsune = false
+let kuni = false
+let loli = false
+let manga = false
+let milf = false
+let mstrb = false
+let neko = false
+let panties = false
+let pussy = false
+let oppai = false
+let spank = false
+let tentacles = false
+let thighs = false
+let tits = false
+let trap = false
+let uniform = false
+let waifu = false
+let yaoi = false
+let yuri = false
 
 //-------------------------------------
 
@@ -108,6 +108,7 @@ const sections = [
 	{title: `${(ch == true ? false : ahegao) == true ? p : f}` + "A • Ahegao", rowId: ".nsfw ahegao"},
 	{title: `${(ch == true ? false : anal) == true ? p:f}` + "A • Anal", rowId: ".nsfw anal"},
 	{title: `${(ch == true ? false : ass) == true ? p:f}` + "A • Ass", rowId: ".nsfw ass"},
+	{title: `${(ch == true ? false : blowjob) == true ? p:f}` + "B • BlowJob", rowId: ".nsfw blowjob"},
 	{title: `${(ch == true ? false : cums) == true ? p:f}` + "C • Cumsluts", rowId: ".nsfw cums"},
 	{title: `${(ch == true ? false : ecchi) == true ? p:f}` + "E • Ecchi", rowId: ".nsfw ecchi"},
 	{title: `${(ch == true ? false : ero) == true ? p:f}` + "E • Ero", rowId: ".nsfw ero"},

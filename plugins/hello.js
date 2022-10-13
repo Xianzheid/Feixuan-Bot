@@ -9,7 +9,7 @@ conn.reply(m.chat, info, m, { quoted: fkontak },{ contextInfo: { externalAdReply
     mediaUrl: "https://instagram.com/xianzhe_xx",
     mediaType: 2,
     description: "https://instagram.com/xianzhe_xx", 
-    title: 'FeixuanBOT V1 | MD',
+    title: 'XiaFeixuan-MultiDevice',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sig  }}})

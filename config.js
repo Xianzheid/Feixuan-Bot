@@ -51,20 +51,16 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 
 global.sig = 'https://instagram.com/xianzhe_xx' // ig
-global.sgh = 'https://github.com/XiaFeixuan-V1/' // github
+global.sgh = 'https://github.com/XianzheID/' // github
 global.sgc = 'https://chat.whatsapp.com/FQkbyTEfvES3D363uxMEFOI' // group whatsapp
-global.sdc = 'https://www.discord.com'//discord
-global.snh = 'https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow' // my youtube channel
-global.sfb = 'https://www.facebook.com/' // facebook
-global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
+global.sdc = '-'//discord
+global.snh = 'https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9A' // my youtube channel
+global.sfb = '-' // facebook
+global.syt = '-' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
 global.pdana = '6285326781097' //dana
-global.povo = '08XXXXXXXXXX' //ovo
-global.pgopay = '08XXXXXXXXXX' //gopay
-global.plinkaja = '08XXXXXXXXXX' //link aja
-global.ppulsa = '08XXXXXXXXXX' //telkomsel
-global.ppulsa2 = '08XXXXXXXXXX' // kalau ada kartu lain isi aja
+global.ppulsa = '6285326781097' //telkomsel
 global.psaweria = 'https://saweria.com/xianzhe'
 
 /*============== NOMOR ==============*/
@@ -140,6 +136,7 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 global.wm = '                「 XiaFeixuan-V1 」' //Main Watermark
+global.wm2 = ' '
 global.wm3 = '⫹⫺ XiaFeixuan-V1 '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`

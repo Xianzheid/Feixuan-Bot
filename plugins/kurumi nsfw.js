@@ -5,8 +5,7 @@ let res = await fetch('https://raw.githubusercontent.com/Xianzheid/Bahan-Nsfw/ma
 if (!res.ok) throw await `${res.status} ${res.statusText}`;
 let json = await res.json();
 let url = json[Math.floor(Math.random() * json.length)]
-    conn.sendButton(m.chat, 'Dosa ditanggung sendiri!', author, json.url, [['Next', `${command}`]], m)
-    �Creator Xianzhe ID\nhttps://instagram.com/xianzhe
+    conn.sendButton(m.chat, 'Nih bang ｡◕‿◕｡', wm, await(await fetch(url)).buffer(), [['Next',`.${command}`]],m)
 }
 handler.command = /^(kurumi)$/i
 handler.tags = ['nsfw']

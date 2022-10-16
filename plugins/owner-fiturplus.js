@@ -33,7 +33,7 @@ await conn.sendMessage(m.chat, { audio: { url: 'http://www.myinstants.com/media/
 'contextInfo': {
 'externalAdReply': {
 'showAdAttribution': true,
-'mediaUrl': 'https://www.facebook.com',
+'mediaUrl': 'https://instagram.com/xianzhe_xx',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': '👋 Nihhh, ' ,
@@ -47,7 +47,7 @@ await conn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/a46ab7fa
 'contextInfo': {
 'externalAdReply': {
 'showAdAttribution': true,
-'mediaUrl': 'https://www.facebook.com',
+'mediaUrl': 'https://instagram.com/xianzhe_xx',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': '👋 Nihhh, ' ,
@@ -62,7 +62,7 @@ await conn.sendMessage(m.chat, { document: { url: 'http://www.myinstants.com/med
 'contextInfo': {
 'externalAdReply': {
 'showAdAttribution': true,
-'mediaUrl': 'https://www.facebook.com',
+'mediaUrl': 'https://instagram.com/xianzhe_xx',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': '👋 Nihhh, ' ,

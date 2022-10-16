@@ -23,25 +23,21 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
-│       *「 Kartu Intro 」*
-│ *Nama     :* 
-│ *Gender   :* 
-│ *Umur      :* 
-│ *Asal         :* 
-|  *Status     :* 
-╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
+let krtu = `
+╭───── ⋆✩
+│ Nama   :
+│ Gender :
+│ Umur    :
+╰───── ⋆✩
+
 `
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+let wibu = 'https://telegra.ph/file/7c2fccac55bdcb7603082.jpg'
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "VIDEO",
-    description: "https://www.instagram.com/xianzhe_xx", 
-    title: 'XiaFeixuan MultiDevice',
+conn.sendButtonDoc(m.chat, krtu, wm,'MENU','/menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    title: 'XiaFeixuan-IV MultiDevice',
     body: wm,
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sigh
   }
   } }) // Tambah sendiri kalo mau
 }

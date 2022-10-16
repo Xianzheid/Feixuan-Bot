@@ -17,7 +17,7 @@ try {
     body
   })
   if (res.status !== 200) throw await res.json()
-  await conn.sendFile(m.chat, await res.buffer(), 'hd.jpg', 'Nihh,, Hade kan?', m)
+  await conn.sendFile(m.chat, await res.buffer(), 'hd.jpg', 'Nih kak', m)
 } catch (e) {
   m.reply('Ada yang Erorr!')
  }
@@ -27,5 +27,6 @@ handler.tags = ['tools']
 handler.command = /^(hd|enhance)$/i
 
 handler.limit = true
+handler.premium = true
 
 export default handler

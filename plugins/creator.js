@@ -19,38 +19,32 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
-let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *Nama* : Xianzhe ID
-${htjava} *Gender* : Pria
-${htjava} *Agama* : Islam
-${htjava} *Umur* : 17
-${htjava} *Hobby* : Baca Komik
-${htjava} *Sifat* : Asik [Kalo akrab]
-${htjava} *Tinggal Di* : Indonesia, Jawa Timur
-${htjava} *Status* : Jomblo "Minat jadi pacar saya?:v"
+let teksbio = `${htki} 𝗦𝗜𝗠𝗣𝗟𝗘 𝗕𝗜𝗢𝗗𝗔𝗧𝗔 ${htka}
+${htjava} 𝗡𝗮𝗺𝗮 : 𝗫𝗶𝗮𝗻𝘇𝗵𝗲 𝗜𝗗
+${htjava} 𝗚𝗲𝗻𝗱𝗲𝗿 : 𝗣𝗿𝗶𝗮
+${htjava} 𝗨𝘀𝗶𝗮 : 𝟭𝟳
+${htjava} 𝗛𝗼𝗯𝗶 : 𝗞𝗼𝗺𝗶𝗸
+${htjava} 𝗔𝘀𝗮𝗹 : 𝗜𝗻𝗱𝗼𝗻𝗲𝘀𝗶𝗮, 𝗝𝗮𝘄𝗮 𝗧𝗶𝗺𝘂𝗿
+${htjava} ```btw i love you><```
 
-${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
-${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
+${htjava} * ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah ini kak ｡◕‿◕｡'
+  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
-	{title: "📂 • Nomor Owner", rowId: ".owner nomor"},
-	{title: "📂 • Nomor Owner V2", rowId: ".whmods1"},
-	{title: "📂 • Pengembang", rowId: ".whmods2"},
-	{title: "📂 • Creator", rowId: ".whmods3"},
-	{title: "📂 • Biodata", rowId: ".owner bio"},
-	{title: "📂 • Script", rowId: ".sc"},
+	{title: "❒ • Nomor Owner", rowId: ".owner nomor"},
+	{title: "❐ • Biodata Owner", rowId: ".owner bio"},
+	{title: "❐ • Script Bot", rowId: ".sc"},
 	]
     },{
 	title: `${htjava} SUPPORT ME –––––––·•`,
 	rows: [
-	    {title: "💳 • Donasi", rowId: ".owner nomor"},
-	{title: "💳 • Sewa", rowId: ".sewa"},
-	{title: " 💳 • Buy Premium", rowId: ".premium"},
+	    {title: "❐ • Donasi", rowId: ".owner nomor"},
+	{title: "❐ • Sewa", rowId: ".sewa"},
+	{title: "❐ • Buy Premium", rowId: ".premium"},
 	]
   },
 ]

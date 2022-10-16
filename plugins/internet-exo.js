@@ -7,7 +7,7 @@ fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/exo.txt')
 let handler = async (m, { conn }) => {
     let img = arr[Math.floor(Math.random() * arr.length)]
     if (!img) throw img
-    await conn.sendFile(m.chat, img, '', '© nih EXOnya jangan lupa follow instagram @xianzhe_xx  yaa ｡◕‿◕｡', m, 0, { thumbnail: await (await fetch(img)).buffer() })
+    await conn.sendFile(m.chat, img, '', '©Nih kak', m, 0, { thumbnail: await (await fetch(img)).buffer() })
 }
 handler.help = ['exo']
 handler.tags = ['internet']

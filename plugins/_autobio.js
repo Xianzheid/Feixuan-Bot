@@ -6,7 +6,7 @@ handler.all = async function (m) {
 	if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
 		let uptime = clockString(_uptime);
-		let bio = `🚀 Aktif selama ${uptime}\n${htjava} Mode: ${global.opts['self'] ? 'Private' : setting.self ? 'Private' : global.opts['gconly'] ? 'Hanya Grup' : 'Publik'}\n${htjava} 🥀 By ${author}\n${cmenuf}`
+		let bio = `Runtime ${uptime}\n${htjava} Mode: ${global.opts['self'] ? 'Private' : setting.self ? 'Private' : global.opts['gconly'] ? 'Hanya Grup' : 'Publik'}\n${htjava} 🥀 By ${author}\n${cmenuf}`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 	}

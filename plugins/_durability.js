@@ -14,7 +14,7 @@ handler.before = async function (m) {
         	user.sworddurability = 0
         }
         
-//pickaxe
+//Pickaxe
     if (user.pickaxe > 0) {
     	if (user.pickaxedurability < 1) {
             user.pickaxedurability = 30

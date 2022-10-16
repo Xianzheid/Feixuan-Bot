@@ -1,6 +1,6 @@
 const roles = {
     /*
-    'Role Name': <Minimal Level To Obtain this Role>
+    'Role Name': <Minimal Level To Obtain this Role> 
     */
     'Bronze V': 0,
     'Bronze IV': 5,

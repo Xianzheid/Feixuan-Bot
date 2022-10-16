@@ -11,15 +11,15 @@ let str = `${global.wm}
 
 ┌─「 Donasi • Non Pulsa 」
 │ • *Dana:* [${global.pdana}]
-│ • *saweria:* [${global.psaweria}]
+│ • *Gopay:* [${global.pgopay}]
+│ • *Ovo:* [${global.povo}]
+│ • *Saweria:* [saweria.co/xianzhe]
 ❏────`
-let wibu = `https://i.ibb.co/P5BBzbf/286637238-392674839545088-948545114162206238-n.jpg` 
+let wibu = `https://telegra.ph/file/dd0d6f601fe7a619e1013.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "VIDEO",
-    description: "https://telegra.ph/file/5d646d40d6986628ab20a.jpg", 
-    title: 'XiaFeixuan-V1 MultiDevice',
+    title: 'XiaFeixuan-IV MultiDevice',
+    description: 'instagram.com/xianzhe_xx'
     body: wm,
     thumbnail: thumb,
     sourceUrl: sig

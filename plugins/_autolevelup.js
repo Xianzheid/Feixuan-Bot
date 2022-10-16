@@ -12,10 +12,10 @@ export function before(m) {
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
         m.reply(`
-🎉ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs, ${this.getName(m.sender)} ʟᴇᴠᴇʟ ᴜᴩ﹗
-• 📉 ᴩʀᴇᴠɪᴏᴜs ʟᴇᴠᴇʟ : ${before}
-• 📈 ɴᴇᴡ ʟᴇᴠᴇʟ : ${user.level}
-• 🎎 ʀᴏʟᴇ : ${user.role}
+ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs, ${this.getName(m.sender)} ʟᴇᴠᴇʟ ᴜᴩ﹗
+•  ᴩʀᴇᴠɪᴏᴜs ʟᴇᴠᴇʟ : ${before}
+•  ɴᴇᴡ ʟᴇᴠᴇʟ : ${user.level}
+•  ʀᴏʟᴇ : ${user.role}
 gunakan *.profile* untuk mengecek
 	`.trim())
     }

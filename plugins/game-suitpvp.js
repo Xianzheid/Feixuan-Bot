@@ -1,5 +1,5 @@
-let timeout = 60000
-let poin = 500
+let timeout = 600
+let poin = 9999999999999999999999999
 let poin_lose = -100
 let handler = async (m, { conn, usedPrefix }) => {
   conn.suit = conn.suit ? conn.suit : {}
@@ -31,6 +31,6 @@ handler.tags = ['game']
 handler.help = ['suitpvp', 'suit2'].map(v => v + ' @tag')
 handler.command = /^suit(pvp|2)$/i
 handler.limit = false
-handler.group = true
+handler.owner = true
 
 export default handler

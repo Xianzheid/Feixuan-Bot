@@ -25,7 +25,7 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 */
 
-const isToxic = /anj(k|g)|ajn?(g|k)|a?njin(g|k)|bajingan|b(a?n)?gsa?t|ko?nto?l|me?me?(k|q)|pe?pe?(k|q)|meki|titi(t|d)|pe?ler|tetek|toket|ngewe|go?blo?k|to?lo?l|idiot|(k|ng)e?nto?(t|d)|jembut|bego|dajj?al|janc(u|o)k|pantek|puki ?(mak)?|kimak|kampang|lonte|col(i|mek?)|pelacur|henceu?t|nigga|fuck|dick|bitch|tits|bastard|asshole|a(su|sw|syu)/i // tambahin sendiri
+const isToxic = /anj(k|g)|ajn?(g|k)|a?njin(g|k)|bajingan|b(a?n)?gsa?t|ko?nto?l|me?me?(k|q)|pe?pe?(k|q)|meki|titi(t|d)|pe?ler|tetek|toket|ngewe|go?blo?k|to?lo?l|idiot|(k|ng)e?nto?(t|d)|jembut|bego|dajj?al|janc(u|o)k|pantek|puki ?(mak)?|kimak|kampang|lonte|col(i|mek?)|pelacur|henceu?t|nigga|fuck|dick|bitch|tits|bastard|asshole|a(su|sw|syu)|k(ntl|ontl|ontol|ntol)/i // tambahin sendiri
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
     if (m.isBaileys && m.fromMe)
@@ -44,7 +44,7 @@ export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBo
     global.db.data.users[m.sender].warn += 1
     global.db.data.users[m.sender].banned = true
     return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: hapus }})
-        } else if (!bot.restrict) return m.reply('Semoga harimu suram!')
+        } else if (!bot.restrict) return m.reply('Jangan toxic kak')
     }
     return !0
 }

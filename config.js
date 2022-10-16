@@ -55,21 +55,21 @@ global.sgc = 'https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A' // group whatsap
 global.sdc = 'https://www.discord.com'//discord
 global.snh = 'https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9Al' // my youtube channel
 global.sfb = 'https://www.facebook.com/' // facebook
-global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
+global.syt = 'https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9Al'' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '+6285326781097' //dana
+global.pdana = '+62 853-2678-1097' //dana
 global.povo = '-' //ovo
-global.pgopay = '-' //gopay
+global.pgopay = '+62 853-2678-1097' //gopay
 global.plinkaja = '-' //link aja
-global.ppulsa = '+6285326781097' //telkomsel
-global.ppulsa2 = '+6285358805324' // kalau ada kartu lain isi aja
+global.ppulsa = '+62 853-2678-1097' //telkomsel
+global.ppulsa2 = '+62 853-5880-5324' // kalau ada kartu lain isi aja
 global.psaweria = 'https://saweria.com/xianzhe'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6285358805324'
 global.nomorown = '6285326781097'
-global.namebot = 'XiaFeixuan IV'
+global.namebot = 'Xia Feixuan-V4'
 global.nameown = 'Xianzhe ID'
 
 /*============== Github Thanks To ==============*/
@@ -86,14 +86,14 @@ global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182
 /*============== STAFF ==============*/
 global.owner = [
   ['6285326781097', 'Xianzhe ID', true],
-  ['6285358805324', 'XiaFeixuan IV', true],
+  ['6285358805324', 'Xia Feixuan', true],
   ['6285326781097', 'Xianzhe ID', true],
   ['-', 'ISI KALAU ADA', true],
   ['-', 'ISI KALAU ADA', true]
     //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
+global.mods = ['6285326781097'] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
@@ -138,14 +138,14 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 XiaFeixuan IV 」' //Main Watermark
-global.wm2 =  
-global.wm3 = '⫹⫺ XiaFeixuan IV '
+global.wm = '「 Xia Feixuan-V4 」' //Main Watermark
+global.wm2 =  ' '
+global.wm3 = '⫹⫺ Xia Feixuan-V4 '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
 global.titlebot = `⫹⫺ WhatsApp Bot | By Xianzhe ID`
 global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = '              「 XiaFeixuan IV  」'
+global.author = '「 Xianzhe ID 」'
 
 /*Fake*/
 global.fsizedoc = '1'.repeat(10)
@@ -637,8 +637,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'XiaFeixuan IV'
-global.stickauth = `By ©Xianzhe ID`
+global.stickpack = 'Creator '
+global.stickauth = `©Xianzhe ID`
 
 global.multiplier = 30 // The higher, The harder levelup
 

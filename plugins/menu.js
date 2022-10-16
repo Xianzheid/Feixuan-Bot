@@ -22,26 +22,6 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 ${emot}│☂︎ *Xp:* %exp / %maxexp
 ┬│☂︎ *Total Xp:* %totalexp
 │╰────────────────···
-┠─────═[ TODAY ]═─────⋆
-│╭────────────────···
-┴│    *${ucapan()} %name!*
-${emot}│☂︎ *Tanggal:* %week %weton
-${emot}│☂︎ *Date:* %date
-${emot}│☂︎ *Tanggal Islam:* %dateIslamic
-┬│☂︎ *Waktu:* %time
-│╰────────────────···
-┠─────═[ INFO BOT ]═─────⋆
-│╭────────────────···
-┴│☂︎ *Nama Bot:* %me
-${emot}│☂︎ *Mode:* %mode
-${emot}│☂︎ *Prefix:* [ *%_p* ]
-${emot}│☂︎ *Baileys:* Multi Device
-${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-${emot}│☂︎ *Platform:* %platform
-${emot}│☂︎ *Type:* Node.Js
-${emot}│☂︎ *Uptime:* %muptime
-┬│☂︎ *Database:* %rtotalreg dari %totalreg
-│╰────────────────···
 ╰──────────═┅═──────────
 
 ⃝▣──「 *INFO CMD* 」───⬣
@@ -273,26 +253,26 @@ const sections = [
    {
     title: `${htki} MAIN ${htka}`,
     rows: [
-        {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-        {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `⏰ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
-        {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
+        {title: `❏ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
+        {title: `❏ ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+        {title: `❏ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
+        {title: `❏ ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
         title: `${htki} SUPPORT ${htka}`,
         rows: [
-            {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-            {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-            {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+            {title: `❏ ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+            {title: `❏ ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
+            {title: `❏ ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
         ]
         },{
           title: `${htki} MENU MENFESS ${htka}`,
           rows: [
-            {title: `💬 ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
+            {title: `❏ ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
           ]},{
         title: `${htki} MENU ${htka}`,
         rows: [
-            {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua Command BOT"},
+            {title: `⌦ ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua Command BOT"},
             {title: `⌦ ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
         {title: `⌦ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
         {title: `⌦ ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
@@ -325,13 +305,21 @@ const sections = [
 let tek = `✧────···[ Dashboard ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
 ╭━━━━━━━━━━━━━━━━┈─✧
-│  「 *U s e r  I n f o 克* 」
-│ *Halo Kak* @${m.sender.split`@`[0]}
+│  「 *USER INFO 克* 」
+│${emot} *Nama:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│${emot} *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│  「 *STATUS INFO 比* 」
+│${emot} *Time:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+│${emot} *Users:* ${Object.keys(global.db.data.users).length}
 │${emot} *Limit:* ${usrs.limit}
 │${emot} *Level:* ${usrs.level}
+│
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *I n f o   B o t 比* 」
+│  「 *INFO BOT 比* 」
+│${emot} Creator ${nameown}
 │${emot} Aktif selama ${mpt}
 │${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 │${emot} Prefix : [ ${_p} ]
@@ -339,23 +327,19 @@ let tek = `✧────···[ Dashboard ]···────✧
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
-├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *Sumber :* Github
-│ ▸ *Author :* ${nameown}
-│ ▸ *Owner :* Xianzhe ID && XiaFeixuan IV
-│ 
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
+  footer: `Creator ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `CLICK HERE `, 
+  buttonText: `Click Here ⎙`, 
   sections
 }
   if (teks == '404') {
   	return conn.sendMessage(m.chat, listMessage, { quoted: fakes, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
     }
-	  
+    
  /**************************** TIME *********************/
  let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
     let wibh = moment.tz('Asia/Jakarta').format('HH')
@@ -591,11 +575,12 @@ const listMessage = {
 
 //-------DOC TEMPLATE
     const message = { 
-            image: { url: thumb },
+                        document: { url: thumbdoc },
             jpegThumbnail: await (await fetch(urls)).buffer(),
             fileName: wm,
-            mimetype: image/jpeg,
-            productImageCount: 404
+            mimetype: td,
+            fileLength: fsizedoc,
+            pageCount: fpagedoc,
             caption: text.trim(),
             footer: titlebot,
             templateButtons: [
@@ -630,7 +615,7 @@ const listMessage = {
                     }
                 },
             ]
-        } 
+        }
        //await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
 
     //------------------- 2BUTTON VID
@@ -700,5 +685,20 @@ function clockStringP(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [ye, ' *Years *\n',  mo, ' *Month *\n', d, ' *Days *\n', h, ' *Hours *\n', m, ' *Minute *\n', s, ' *Second *'].map(v => v.toString().padStart(2, 0)).join('')
 }
-function ucapan() { Creator ($author)
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Hai kak"
+  if (time >= 4) {
+    res = "Pagi Lord"
+  }
+  if (time >= 10) {
+    res = "Siang Lord"
+  }
+  if (time >= 15) {
+    res = "Sore Lord"
+  }
+  if (time >= 18) {
+    res = "Malam Lord"
+  }
+  return res
 }

@@ -1,4 +1,4 @@
-let timeout = 600
+let timeout = 600000000
 let poin = 9999999999999999999999999
 let poin_lose = -100
 let handler = async (m, { conn, usedPrefix }) => {

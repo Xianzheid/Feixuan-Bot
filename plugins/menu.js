@@ -330,7 +330,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `Creator ${nameown}\n\n${botdate}\n\n${wm2}`,
+  footer: `©Xianzhe ID\nInstagram :\nhttps://instagram.com/xianzhe_xx\nWhatsapp Group :\nhttps://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `Click Here ⎙`, 

@@ -7,20 +7,20 @@ let handler = async (m, { conn }) => {
 let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     
-     if (new Date - global.db.data.users[m.sender].lastngojek > 300000) {
-let randomaku1 = `${Math.floor(Math.random() * 100)}`
-let randomaku2 = `${Math.floor(Math.random() * 100)}`
-let randomaku4 = `${Math.floor(Math.random() * 100)}`
-let randomaku3 = `${Math.floor(Math.random() * 100)}`
-let randomaku5 = `${Math.floor(Math.random() * 100)}`
+     if (new Date - global.db.data.users[m.sender].lastngojek > 30000) {
+let randomaku1 = `${Math.floor(Math.random() * 1)}`
+let randomaku2 = `${Math.floor(Math.random() * 1)}`
+let randomaku4 = `${Math.floor(Math.random() * 1)}`
+let randomaku3 = `${Math.floor(Math.random() * 1)}`
+let randomaku5 = `${Math.floor(Math.random() * 1)}`
 
 .trim()
 
-let rbrb1 = (randomaku1 * 99999999999999999999)
-let rbrb2 = (randomaku2 * 99999999999999999999) 
-let rbrb3 = (randomaku3 * 99999999999999999999)
-let rbrb4 = (randomaku4 * 99999999999999999999)
-let rbrb5 = (randomaku5 * 99999999999999999999)
+let rbrb1 = (randomaku1 * 99999999)
+let rbrb2 = (randomaku2 * 99999999) 
+let rbrb3 = (randomaku3 * 99999999)
+let rbrb4 = (randomaku4 * 99999999)
+let rbrb5 = (randomaku5 * 99999999)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -28,29 +28,19 @@ var zero3 = `${rbrb3}`
 var zero4 = `${rbrb4}`
 var zero5 = `${rbrb5}`
 
-var dimas = `
-✔️ Mendapatkan Hacker....
+var Xianzhe1 = `
+ 	Starting [ ... ]
 `
 
-var dimas2 = `
-Mulai NgeCheat.....
-`
-
-var dimas3 = `     
-Mengatasi Error.....
-`
-
-var dimas4 = `
-Selesai
+var Xianzhe2 = `
+	Succes, Cheat Activated [  ]
 `
 
 var hsl = `
-*—[ Hasil NgeCheat ${name} ]—*
+*—[ Hasil Cheat ${name} ]—*
  ➕ Uang = [ ${zero4} ]
  ➕ Exp = [ ${zero5} ] 
  ➕ Warn = +1		 
- ➕ Order Selesai = +1
- ➕ Total Order Sebelumnya : ${order}
 ${wm}
 `
 
@@ -63,29 +53,21 @@ global.db.data.users[m.sender].ojekk += 1
 
 setTimeout(() => {
                      m.reply(`${hsl}`)
-                     }, 27000) 
-               
-                     setTimeout(() => {
-                     m.reply(`${dimas4}`)
-                      }, 25000)
-                
-                     setTimeout(() => {
-                     m.reply(`${dimas3}`)
-                     }, 20000) 
-                        
-                     setTimeout(() => {
-                     m.reply(`${dimas2}`)
-                     }, 15000) 
-                    
-                     setTimeout(() => {
-                     m.reply(`${dimas}`)
-                     }, 10000) 
+                     }, 0) 
                      
                      setTimeout(() => {
-                     m.reply('🔍Mencari Hacker.....')
+                     m.reply(`${Xianzhe2}`)
+                     }, 0) 
+                    
+                     setTimeout(() => {
+                     m.reply(`${Xianzhe1}`)
+                     }, 0) 
+                     
+                     setTimeout(() => {
+                     m.reply('Seacrh File')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Cooldown\n�� *${timers}*`, wm, 'inventory', '.inv', m )
 }
 handler.help = ['ngecheat']
 handler.tags = ['rpg']

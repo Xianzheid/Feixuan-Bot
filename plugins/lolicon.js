@@ -7,7 +7,7 @@ let json = await res.json();
 let url = json[Math.floor(Math.random() * json.length)]
 await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Nih kak', '©Xianzhe ID', '/Loli', m)
 }
-handler.command = /^(loli)$/i
+handler.command = /^(loli|lolicon)$/i
 handler.tags = ['anime']
 handler.premium = true
 export default handler

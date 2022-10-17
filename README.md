@@ -1,11 +1,12 @@
-
-## CATATAN
-Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!!
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 <h1 align="center">Xianzhe ID</h1>
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
+
 <p align="center">
     <img src="https://i.ibb.co/TYnJgRD/Pics-Art-10-12-09-43-10.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
+
 <p align="center">
   <a href="https://github.com/xianzheid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=XiaFeixuan+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+Xianzhe+ID;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
 </p>
@@ -14,7 +15,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!
  <a href="#"><img title="XiaFeixuan-BOT" src="https://img.shields.io/badge/XiaFeixuan--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-# Ambil Session Disini
+## Ambil Session Disini
 
 > Buka [ Linknya Disini ](https://replit.com/@zeeoneofc/Session-Md?lite=1&outputonly=1#.replit) 
 > Dan Subscribe [ Here ](https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow) 
@@ -23,12 +24,11 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!
 ## ```Connect With Me 📞```
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A)
 
-
   <a href="https://wa.me/6285358805324">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://www.instagram.com/xianzhe_xx">
-    <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
+    <img align="left" alt="SIEGRIN | Instagram" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9A">
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
@@ -224,10 +224,6 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 3. Follow Github
 4. Don't use this repository wrong!
 5. If you have problem chat me in owner number
-
----------
-
-### ❗ Note : Apikeynya Beli Sendiri Ya Guys😁
 
 ---------
 

@@ -6,7 +6,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //------- NOMOR
   let nowner = `https://wa.me/6285326781097?text=Banh+Lu+Gantenh`
-  let nowner = `https://wa.me/6285326781097?text=/menu`
+  let nowner2 = `https://wa.me/6285326781097?text=/menu`
   let teksnomor = `${htki} *OWNER* ${htka}
  ❒ Xianzhe ID : ${nomorown}
  ❒ XiaFeixuan : ${nomorown2}

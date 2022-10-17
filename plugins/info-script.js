@@ -2,20 +2,19 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://github.com/XianzheID/XiaFeixuan-Bot*
+let str = `*https://github.com/XianzheID/XiaFeixuat-Bot*
 
-
-wa.me/6285326781097`
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+`
+let wibu = `https://telegra.ph/file/7f49101f4824088555a38.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "VIDEO",
-    description: "https://www.instagram.com/xianzhe_xx", 
-    title: 'XiaFeixuan - MultiDevice',
+    mediaType: "image/jpg",
+    description: "https://instagram.com/xianzhe_xx", 
+    title: 'XiaFeixyan-Bot | MultiDevice',
     body: wm,
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sig
   }
   } }) 
           }

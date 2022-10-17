@@ -9,7 +9,7 @@ let str = `${global.wm}
 │ • *Telkomsel:* [${global.ppulsa}]
 │ • *Dana:* [${global.pdana}]
 │ • *Gopay:* [${global.pgopay}]
-│ • *Saweria:* [saweria.co/xianzhe]
+│ • *Saweria:* [${global.psaweria}]
 ❏────`
 let wibu = `https://telegra.ph/file/837d65f38345a7524024f.jpg` 
 let thumb = await(await fetch(wibu)).buffer()

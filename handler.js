@@ -1299,23 +1299,23 @@ export async function participantsUpdate({ id, participants, action }) {
                             })
                             
  /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram/xianzhe_xx',
     mediaType: 2, 
-    description: sgc,
-    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    description: sig,
+    title: 'Follow My Insta^~^',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
-    sourceUrl: sgc
+    sourceUrl: sig
      }}
   })*/
   let welcom = 'https://telegra.ph/file/aab124271570c51f76aac.jpg'
 
   let godbye = 'https://telegra.ph/file/deaf59bc3e5216eaae814.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://www.instagram.com/_ctzhid/',
+    mediaUrl: 'https://instagram/xianzhe_xx',
     mediaType: 2, 
-    description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    description: sig,
+    title: "Follow My Insta^~^",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig

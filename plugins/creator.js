@@ -5,12 +5,14 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let _type = (args[0] || '').toLowerCase()
 
 //------- NOMOR
-  let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
+  let nowner = `https://wa.me/6285326781097?text=Banh+Lu+Gantenh`
+  let nowner = `https://wa.me/6285326781097?text=/menu`
   let teksnomor = `${htki} *OWNER* ${htka}
-✦ @${nomorown.split`@`[0]} ✦
+ ❒ Xianzhe ID : ${nomorown}
+ ❒ XiaFeixuan : ${nomorown2}
 ------- ${nameown} -------
 
-📮 *Note:*
+*Note:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
@@ -25,12 +27,10 @@ ${htjava} 𝗚𝗲𝗻𝗱𝗲𝗿 : 𝗣𝗿𝗶𝗮
 ${htjava} 𝗨𝘀𝗶𝗮 : 𝟭𝟳
 ${htjava} 𝗛𝗼𝗯𝗶 : 𝗞𝗼𝗺𝗶𝗸
 ${htjava} 𝗔𝘀𝗮𝗹 : 𝗜𝗻𝗱𝗼𝗻𝗲𝘀𝗶𝗮, 𝗝𝗮𝘄𝗮 𝗧𝗶𝗺𝘂𝗿
-${htjava} ```btw i love you><```
-
-${htjava} * ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
+footer: Instagram :\n${sig}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
+  let teks = 'More'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,

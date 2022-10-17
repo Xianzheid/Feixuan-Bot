@@ -5,17 +5,13 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 let str = `${global.wm}
 
-┌─「 Donasi • Pulsa 」
+┌─「 Donasi 」
 │ • *Telkomsel:* [${global.ppulsa}]
-❏────
-
-┌─「 Donasi • Non Pulsa 」
 │ • *Dana:* [${global.pdana}]
 │ • *Gopay:* [${global.pgopay}]
-│ • *Ovo:* [${global.povo}]
 │ • *Saweria:* [saweria.co/xianzhe]
 ❏────`
-let wibu = `https://telegra.ph/file/dd0d6f601fe7a619e1013.jpg` 
+let wibu = `https://telegra.ph/file/c60573400c709629410d0.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     title: 'XiaFeixuan-IV MultiDevice',

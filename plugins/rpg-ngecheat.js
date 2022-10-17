@@ -1,7 +1,7 @@
-
+//Creator Xianzhe ID [Wm nya Jangan Dihapus Banh]
 let handler = async (m, { conn }) => {
     let __timers = (new Date - global.db.data.users[m.sender].lastngojek)
-    let _timers = (300000 - __timers)
+    let _timers = (10 - __timers)
     let order = global.db.data.users[m.sender].ojekk
     let timers = clockString(_timers) 
 let name = conn.getName(m.sender)
@@ -16,11 +16,11 @@ let randomaku5 = `${Math.floor(Math.random() * 10)}`
 
 .trim()
 
-let rbrb1 = (randomaku1 * 99999)
-let rbrb2 = (randomaku2 * 99999) 
-let rbrb3 = (randomaku3 * 99999)
-let rbrb4 = (randomaku4 * 99999)
-let rbrb5 = (randomaku5 * 99999)
+let rbrb1 = (randomaku1 * 99999999)
+let rbrb2 = (randomaku2 * 99999999) 
+let rbrb3 = (randomaku3 * 99999999)
+let rbrb4 = (randomaku4 * 99999999)
+let rbrb5 = (randomaku5 * 99999999)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -28,19 +28,14 @@ var zero3 = `${rbrb3}`
 var zero4 = `${rbrb4}`
 var zero5 = `${rbrb5}`
 
-var dimas = `
-Mendapatkan Hacker
+var xianzhe = `
+Mendapatkan Plugins
 `
 
-var dimas2 = `
-Mulai NgeCheat
+var xianzhe2 = `
+Mengedit Plugins
 `
-
-var dimas3 = `     
-Mengatasi Error
-`
-
-var dimas4 = `
+var xianzhe3 = `
 Selesai
 `
 
@@ -51,9 +46,8 @@ var hsl = `
  ➕ Warn = +1		 
  ➕ Order Selesai = +1
  ➕ Total Order Sebelumnya : ${order}
-${wm}
+©Creator Xianzhe ID
 `
-
 
 global.db.data.users[m.sender].warn += 1
 global.db.data.users[m.sender].money += rbrb4
@@ -63,26 +57,22 @@ global.db.data.users[m.sender].ojekk += 1
 
 setTimeout(() => {
                      m.reply(`${hsl}`)
-                     }, 27000) 
+                     }, 2700) 
+
+                     setTimeout(() => {
+                     m.reply(`${xianzhe3}`)
+                     }, 1500) 
                
                      setTimeout(() => {
-                     m.reply(`${dimas4}`)
-                      }, 25000)
-                
-                     setTimeout(() => {
-                     m.reply(`${dimas3}`)
-                     }, 20000) 
-                        
-                     setTimeout(() => {
-                     m.reply(`${dimas2}`)
-                     }, 15000) 
+                     m.reply(`${xianzhe2}`)
+                     }, 1500) 
                     
                      setTimeout(() => {
-                     m.reply(`${dimas}`)
-                     }, 10000) 
+                     m.reply(`${xianzhe}`)
+                     }, 1000) 
                      
                      setTimeout(() => {
-                     m.reply('🔍Mencari Hacker.....')
+                     m.reply('Mencari Plugins')
                      }, 0) 
   user.lastngojek = new Date * 1
     } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )

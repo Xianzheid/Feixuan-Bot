@@ -6,7 +6,7 @@ import os from 'os'
 import fs from 'fs'
 import fetch from 'node-fetch'
 const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
-let emot = `${pickRandom(['❐, ❐'])}`
+let emot = `${pickRandom(['❐'])}`
 	
 const defaultMenu = {
   before: `
@@ -253,51 +253,51 @@ const sections = [
    {
     title: `${htki} MAIN ${htka}`,
     rows: [
-        {title: `「 X 」SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-        {title: `「 X 」OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `「 X 」RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
-        {title: `「 X 」SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
+        {title: `❐ ${pmenus}SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
+        {title: `❐ ${pmenus}OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+        {title: `❐ ${pmenus}RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
+        {title: `❐ ${pmenus}SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
         title: `${htki} SUPPORT ${htka}`,
         rows: [
-            {title: `「 X 」SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-            {title: `「 X 」BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-            {title: `「 X 」DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+            {title: `❐ ${pmenus}SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+            {title: `❐ ${pmenus}BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
+            {title: `❐ ${pmenus}DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
         ]
         },{
           title: `${htki} MENU MENFESS ${htka}`,
           rows: [
-            {title: `「 X 」Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
+            {title: `❐ ${pmenus}Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
           ]},{
         title: `${htki} MENU ${htka}`,
         rows: [
-            {title: `「 X 」All`, rowId: ".? all", description: "Menampilkan Semua Command BOT"},
-            {title: `「 X 」Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-        {title: `「 X 」Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-        {title: `「 X 」Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-        {title: `「 X 」Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-        {title: `「 X 」Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-        {title: `「 X 」Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-        {title: `「 X 」Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-        {title: `「 X 」Nsfw`, rowId: ".? nsfw", description: "Warning, Only 18+"},
-        {title: `「 X 」Premium`, rowId: ".? premium", description: "Only premium Users"},
-        {title: `「 X 」Anonymous Chats`, rowId: ".? anonymous", description: "Only Private Chat"},
-        {title: `「 X 」Al-Quran`, rowId: ".? quran", description: "Menuju Surga Bersama BOT"},
-        {title: `「 X 」Internet`, rowId: ".? internet", description: "Ingin Mencari Sesuatu Di Internet?"},
-        {title: `「 X 」Berita`, rowId: ".? berita", description: "Cari berita terupdate"},
-        {title: `「 X 」Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-        {title: `「 X 」Stikers`, rowId: ".? stiker", description: "Bikin Stiker Anti Ribet"},
-        {title: `「 X 」Logo`, rowId: ".? logo", description: "Membuat Logo Simple & Keren"},
-        {title: `「 X 」Nulis`, rowId: ".? nulis", description: "Mager Nulis? Disini Tempatnya"},
-        {title: `「 X 」Audio`, rowId: ".? audio", description: "Ubah Audio Dengan Filter"},
-        {title: `「 X 」Group`, rowId: ".? group", description: "Only Groups"},
-        {title: `「 X 」Admin`, rowId: ".? admin", description: "Only Admin Group"},
-        {title: `「 X 」Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-        {title: `「 X 」Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-        {title: `「 X 」Info`, rowId: ".? info", description: "Info-info BOT"},
-        {title: `「 X 」Owner`, rowId: ".? owner", description: "Owner Only!"},
-        {title: `「 X 」No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+            {title: `❐ ${pmenus}All`, rowId: ".? all", description: "Menampilkan Semua Command BOT"},
+            {title: `❐ ${pmenus}Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
+        {title: `❐ ${pmenus}Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
+        {title: `❐ ${pmenus}Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
+        {title: `❐ ${pmenus}Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
+        {title: `❐ ${pmenus}Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
+        {title: `❐ ${pmenus}Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
+        {title: `❐ ${pmenus}Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
+        {title: `❐ ${pmenus}Nsfw`, rowId: ".? nsfw", description: "Warning, Only 18+"},
+        {title: `❐ ${pmenus}Premium`, rowId: ".? premium", description: "Only premium Users"},
+        {title: `❐ ${pmenus}Anonymous Chats`, rowId: ".? anonymous", description: "Only Private Chat"},
+        {title: `❐ ${pmenus}Al-Quran`, rowId: ".? quran", description: "Menuju Surga Bersama BOT"},
+        {title: `❐ ${pmenus}Internet`, rowId: ".? internet", description: "Ingin Mencari Sesuatu Di Internet?"},
+        {title: `❐ ${pmenus}Berita`, rowId: ".? berita", description: "Cari berita terupdate"},
+        {title: `❐ ${pmenus}Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
+        {title: `❐ ${pmenus}Stikers`, rowId: ".? stiker", description: "Bikin Stiker Anti Ribet"},
+        {title: `❐ ${pmenus}Logo`, rowId: ".? logo", description: "Membuat Logo Simple & Keren"},
+        {title: `❐ ${pmenus}Nulis`, rowId: ".? nulis", description: "Mager Nulis? Disini Tempatnya"},
+        {title: `❐ ${pmenus}Audio`, rowId: ".? audio", description: "Ubah Audio Dengan Filter"},
+        {title: `❐ ${pmenus}Group`, rowId: ".? group", description: "Only Groups"},
+        {title: `❐ ${pmenus}Admin`, rowId: ".? admin", description: "Only Admin Group"},
+        {title: `❐ ${pmenus}Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+        {title: `❐ ${pmenus}Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
+        {title: `❐ ${pmenus}Info`, rowId: ".? info", description: "Info-info BOT"},
+        {title: `❐ ${pmenus}Owner`, rowId: ".? owner", description: "Owner Only!"},
+        {title: `❐ ${pmenus}No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
         ]
         },
 ]
@@ -428,6 +428,7 @@ const listMessage = {
  let fgclink = {quoted: {key: {participant : '0@s.whatsapp.net'},message: {groupInviteMessage: {groupJid: "17608914335-1625305606@g.us",inviteCode: null,groupName: `Hai ${name}!`,  caption: wm,  jpegThumbnail: fs.readFileSync('./thumbnail.jpg') }} }}
  let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `Hai Kak ${name}!`, "h": `Hmm`, 'seconds': '999999999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg') } } } }
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+ 
     let ftoko = {
     key: {
     fromMe: false,
@@ -686,7 +687,7 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Hai kak"
+  let res = " "
   if (time >= 4) {
     res = " "
   }

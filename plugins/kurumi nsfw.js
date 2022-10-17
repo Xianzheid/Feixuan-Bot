@@ -5,10 +5,10 @@ let res = await fetch('https://raw.githubusercontent.com/Xianzheid/Bahan-Nsfw/ma
 if (!res.ok) throw await `${res.status} ${res.statusText}`;
 let json = await res.json();
 let url = json[Math.floor(Math.random() * json.length)]
-    await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), [['Next',`.${command}`]],m)
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Ngapain?🤨', '©Xianzhe ID', '/Kurumi, m)
 }
 handler.command = /^(kurumi)$/i
 handler.tags = ['premium']
+handler.help = ['kurumi', 'premiummenu']
 handler.premium = true
-handler.register = true
 export default handler

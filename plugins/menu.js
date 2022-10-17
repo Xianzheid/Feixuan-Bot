@@ -324,7 +324,7 @@ let tek = `✧──────────────···[ Dashboard ]
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `©Creator Xianzhe ID\n${botdate}\n`,
+  footer: `©Creator Xianzhe ID\n\n${sgc}\n`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `CLICK HERE ⎙`, 

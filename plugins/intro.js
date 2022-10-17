@@ -35,9 +35,11 @@ let wibu = 'https://telegra.ph/file/7c2fccac55bdcb7603082.jpg'
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, krtu, wm,'MENU','/menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     title: 'XiaFeixuan-IV MultiDevice',
+    mediaurl : 'https://instagram.com/xianzhe_xx'
     body: wm,
+    description: Follow My Insta^~^
     thumbnail: thumb,
-    sourceUrl: sigh
+    sourceUrl: sig
   }
   } }) // Tambah sendiri kalo mau
 }

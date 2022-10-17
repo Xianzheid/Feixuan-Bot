@@ -11,7 +11,7 @@ await m.reply(global.wait)
     if (!ar1.includes(text)) return m.reply(`*🗃️ NOT FOUND!*\n==================================\n\n${ar1.map(v => ' ' + v).join`\n`}`)
     let o
     try {
-        o = await exec('cat plugins/' + text + '.js')
+        o = await exec('plugins/' + text + '.js')
     } catch (e) {
         o = e
     } finally {

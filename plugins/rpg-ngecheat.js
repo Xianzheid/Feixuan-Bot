@@ -1,26 +1,26 @@
-//Creator Xianzhe ID [Wm nya Jangan Dihapus Banh]
+
 let handler = async (m, { conn }) => {
     let __timers = (new Date - global.db.data.users[m.sender].lastngojek)
-    let _timers = (10 - __timers)
+    let _timers = (0 - __timers)
     let order = global.db.data.users[m.sender].ojekk
     let timers = clockString(_timers) 
 let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     
      if (new Date - global.db.data.users[m.sender].lastngojek > 300000) {
-let randomaku1 = `${Math.floor(Math.random() * 10)}`
-let randomaku2 = `${Math.floor(Math.random() * 10)}`
-let randomaku4 = `${Math.floor(Math.random() * 10)}`
-let randomaku3 = `${Math.floor(Math.random() * 10)}`
-let randomaku5 = `${Math.floor(Math.random() * 10)}`
+let randomaku1 = `${Math.floor(Math.random() * 100)}`
+let randomaku2 = `${Math.floor(Math.random() * 100)}`
+let randomaku4 = `${Math.floor(Math.random() * 100)}`
+let randomaku3 = `${Math.floor(Math.random() * 100)}`
+let randomaku5 = `${Math.floor(Math.random() * 100)}`
 
 .trim()
 
-let rbrb1 = (randomaku1 * 99999999)
-let rbrb2 = (randomaku2 * 99999999) 
-let rbrb3 = (randomaku3 * 99999999)
-let rbrb4 = (randomaku4 * 99999999)
-let rbrb5 = (randomaku5 * 99999999)
+let rbrb1 = (randomaku1 * 99999999999999999999)
+let rbrb2 = (randomaku2 * 99999999999999999999) 
+let rbrb3 = (randomaku3 * 99999999999999999999)
+let rbrb4 = (randomaku4 * 99999999999999999999)
+let rbrb5 = (randomaku5 * 99999999999999999999)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -28,14 +28,19 @@ var zero3 = `${rbrb3}`
 var zero4 = `${rbrb4}`
 var zero5 = `${rbrb5}`
 
-var xianzhe = `
-Mendapatkan Plugins
+var dimas = `
+✔️ Mendapatkan Hacker....
 `
 
-var xianzhe2 = `
-Mengedit Plugins
+var dimas2 = `
+Mulai NgeCheat.....
 `
-var xianzhe3 = `
+
+var dimas3 = `     
+Mengatasi Error.....
+`
+
+var dimas4 = `
 Selesai
 `
 
@@ -46,8 +51,9 @@ var hsl = `
  ➕ Warn = +1		 
  ➕ Order Selesai = +1
  ➕ Total Order Sebelumnya : ${order}
-©Creator Xianzhe ID
+${wm}
 `
+
 
 global.db.data.users[m.sender].warn += 1
 global.db.data.users[m.sender].money += rbrb4
@@ -57,22 +63,26 @@ global.db.data.users[m.sender].ojekk += 1
 
 setTimeout(() => {
                      m.reply(`${hsl}`)
-                     }, 2700) 
-
-                     setTimeout(() => {
-                     m.reply(`${xianzhe3}`)
-                     }, 1500) 
+                     }, 27000) 
                
                      setTimeout(() => {
-                     m.reply(`${xianzhe2}`)
-                     }, 1500) 
+                     m.reply(`${dimas4}`)
+                      }, 25000)
+                
+                     setTimeout(() => {
+                     m.reply(`${dimas3}`)
+                     }, 20000) 
+                        
+                     setTimeout(() => {
+                     m.reply(`${dimas2}`)
+                     }, 15000) 
                     
                      setTimeout(() => {
-                     m.reply(`${xianzhe}`)
-                     }, 1000) 
+                     m.reply(`${dimas}`)
+                     }, 10000) 
                      
                      setTimeout(() => {
-                     m.reply('Mencari Plugins')
+                     m.reply('🔍Mencari Hacker.....')
                      }, 0) 
   user.lastngojek = new Date * 1
     } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )

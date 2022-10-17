@@ -5,30 +5,29 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let _type = (args[0] || '').toLowerCase()
 
 //------- NOMOR
-  let nowner = `https://wa.me/6285326781097?text=Banh+Lu+Gantenh`
-  let nowner2 = `https://wa.me/6285326781097?text=/menu`
+  let nowner = `https://wa.me/6285326781097?text=banh+lo+gntg`
   let teksnomor = `${htki} *OWNER* ${htka}
- ❒ Xianzhe ID : ${nomorown}
- ❒ XiaFeixuan : ${nomorown2}
+✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
 
 *Note:*
-• No Telp
-• No Spam
-• No Virus [males war]
+• No spam
+• No Virus
+• No Telp`
 
 //------------ BIO
-let ppown = 'https://telegra.ph/file/837d65f38345a7524024f.jpg'
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} 𝗦𝗜𝗠𝗣𝗟𝗘 𝗕𝗜𝗢𝗗𝗔𝗧𝗔 ${htka}
 ${htjava} 𝗡𝗮𝗺𝗮 : 𝗫𝗶𝗮𝗻𝘇𝗵𝗲 𝗜𝗗
 ${htjava} 𝗚𝗲𝗻𝗱𝗲𝗿 : 𝗣𝗿𝗶𝗮
 ${htjava} 𝗨𝘀𝗶𝗮 : 𝟭𝟳
 ${htjava} 𝗛𝗼𝗯𝗶 : 𝗞𝗼𝗺𝗶𝗸
 ${htjava} 𝗔𝘀𝗮𝗹 : 𝗜𝗻𝗱𝗼𝗻𝗲𝘀𝗶𝗮, 𝗝𝗮𝘄𝗮 𝗧𝗶𝗺𝘂𝗿
-footer: Instagram :\n${sig}
+
+©Xianzhe ID\nInstagram : ${sig}\nGroup Chat : ${sgc}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'More'
+  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,

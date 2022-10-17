@@ -16,11 +16,11 @@ let randomaku5 = `${Math.floor(Math.random() * 10)}`
 
 .trim()
 
-let rbrb1 = (randomaku1 * 99999999999999999999999)
-let rbrb2 = (randomaku2 * 99999999999999999999999) 
-let rbrb3 = (randomaku3 * 99999999999999999999999)
-let rbrb4 = (randomaku4 * 99999999999999999999999)
-let rbrb5 = (randomaku5 * 99999999999999999999999)
+let rbrb1 = (randomaku1 * 99999)
+let rbrb2 = (randomaku2 * 99999) 
+let rbrb3 = (randomaku3 * 99999)
+let rbrb4 = (randomaku4 * 99999)
+let rbrb5 = (randomaku5 * 99999)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -29,15 +29,15 @@ var zero4 = `${rbrb4}`
 var zero5 = `${rbrb5}`
 
 var dimas = `
-✔️ Mendapatkan Hacker....
+Mendapatkan Hacker
 `
 
 var dimas2 = `
-Mulai NgeCheat.....
+Mulai NgeCheat
 `
 
 var dimas3 = `     
-Mengatasi Error.....
+Mengatasi Error
 `
 
 var dimas4 = `
@@ -46,11 +46,11 @@ Selesai
 
 var hsl = `
 *—[ Hasil NgeCheat ${name} ]—*
- ➕ 💹 Uang = [ ${zero4} ]
- ➕ ✨ Exp = [ ${zero5} ] 
- ➕ 📛 Warn = +1		 
- ➕ 😍 Order Selesai = +1
-➕  📥Total Order Sebelumnya : ${order}
+ ➕ Uang = [ ${zero4} ]
+ ➕ Exp = [ ${zero5} ] 
+ ➕ Warn = +1		 
+ ➕ Order Selesai = +1
+ ➕ Total Order Sebelumnya : ${order}
 ${wm}
 `
 

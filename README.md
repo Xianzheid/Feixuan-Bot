@@ -20,7 +20,10 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!
 > Dan Subscribe [ Here ](https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow) 
 
 ---------
-## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
+## ```Connect With Me 📞```
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A)
+
+
   <a href="https://wa.me/6285358805324">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
@@ -31,9 +34,6 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu!
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
   </a> &nbsp;&nbsp; 
 
-
-[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A)
----------
 #### a little about this bot
 - [x] **Fast Respon** 
 - [x] **Simple** 

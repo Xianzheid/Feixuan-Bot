@@ -62,7 +62,7 @@ global.pdana = '+62 853-2678-1097' //dana
 global.povo = '-' //ovo
 global.pgopay = '+62 853-2678-1097' //gopay
 global.plinkaja = '-' //link aja
-global.ppulsa = '+62 853-2678-1097' //telkomsel
+global.ppulsa = '+62 853-1678-1097' //telkomsel
 global.ppulsa2 = '+62 853-5880-5324' // kalau ada kartu lain isi aja
 global.psaweria = 'https://saweria.com/xianzhe'
 
@@ -87,13 +87,13 @@ global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182
 global.owner = [
   ['6285326781097', 'Xianzhe ID', true],
   ['6285358805324', 'Xia Feixuan', true],
-  ['6285326781097', 'Xianzhe ID', true],
+  ['-', 'ISI KALAU ADA', true],
   ['-', 'ISI KALAU ADA', true],
   ['-', 'ISI KALAU ADA', true]
     //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = ['6285326781097'] // Want some help?
+global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
@@ -158,13 +158,9 @@ global.thumb = 'https://telegra.ph/file/97f187de85cb5e288e0db.jpg' //Main Thumbn
 global.imagebot = 'https://telegra.ph/file/97f187de85cb5e288e0db.jpg'
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.thumbs = ['https://telegra.ph/file/97f187de85cb5e288e0db.jpg']
-global.fla = 'https://telegra.ph/file/7c31849e2d4c33bb45462.mp4'
+global.fla = 'https://telegra.ph/file/97f187de85cb5e288e0db.jpg'
 global.thumbnailUrl = [
-'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg','https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
-'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg','https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
-'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg','https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
-'https://telegra.ph/file/55e5af5f33fbd57104187.jpg','https://telegra.ph/file/af236598456b95884bd15.jpg',
-'https://telegra.ph/file/de92ed4a729887ffc974c.jpg','https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg']
+'https://telegra.ph/file/97f187de85cb5e288e0db.jpg','https://telegra.ph/file/97f187de85cb5e288e0db.jpg']
 
 global.flaaa2 = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',

@@ -1,9 +1,9 @@
 import fetch from 'node-fetch'
 
 let handler = async (m) => {
-    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/c60573400c709629410d0.jpg')
     //let wibu = `https://api.zacros.my.id/randomimg/loli`
-    let res = await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/neko.txt')
+    let res = await fetch('https://telegra.ph/file/c60573400c709629410d0.jpg')
     let txt = await res.text()
     let arr = txt.split('\n')
     let cita = arr[Math.floor(Math.random() * arr.length)]
@@ -53,26 +53,26 @@ https://github.com/Rlxfly
 https://github.com/Aiinne
 *❉ Papah-Chan:*
 https://github.com/FahriAdison
-*▸ - - - —「 Penulis Ulang 」— - - - ◂*
 *❉ ImYanXiao:*
 https://github.com/ImYanXiao
-*▸ - - - —「 Thanks For Suhu 」— - - - ◂*
+*▸ - - - —「 And Thanks To 」— - - - ◂*
 *❉ WH MODS DEV:*
 *❉ Kannachan:*
 *❉ Papah-Chan:*
 *❉ Johannes:*
 *❉ Krisna:*
 *❉ Rlxfly:*
+*❉ XianzheID:*
 
 `
 conn.sendButtonDoc(m.chat, tqto, wm,'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_ctzhid",
-    mediaType: "VIDEO",
-    description: "https://Instagram.com/_ctzhid", 
-    title: 'WH-MODS-DEV-MultiDevice',
+    mediaUrl: "https://telegra.ph/file/c60573400c709629410d0.jpg",
+    mediaType: "image",
+    description: "https://Instagram.com/xianzhe_xx", 
+    title: 'XiaFeixuan V1-MultiDevice',
     body: wm,
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sig
 }
 } })
         }

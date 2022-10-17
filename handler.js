@@ -1199,7 +1199,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Limit Terpakai ✔️')
+                        m.reply(+m.limit + ' ʟɪᴍɪᴛ ᴋᴀᴍᴜ ᴛᴇʀᴘᴀᴋᴀɪ ✔️')
                 }
                 break
             }
@@ -1276,7 +1276,7 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/8f85888883eb3bd97760b.png'
+                    let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
@@ -1286,22 +1286,39 @@ export async function participantsUpdate({ id, participants, action }) {
                         let wel = API('males', '/welcome2', {
                                 profile: pp,
                                 username: await this.getName(user),
-                                background: 'https://telegra.ph/file/6835415ed740cb924bef3.jpg',
+                                background: 'https://telegra.ph/file/7f827ca45c833542777f0.jpg',
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
                             let lea = API('males', '/goodbye2', {
                                 profile: pp,
                                 username: await this.getName(user),
-                                background: 'https://telegra.ph/file/6835415ed740cb924bef3.jpg',
+                                background: 'https://telegra.ph/file/7f827ca45c833542777f0.jpg',
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
                             
- /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true
+ /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
+    mediaType: 2, 
+    description: sgc,
+    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    body: wm,
+    thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
+    sourceUrl: sgc
      }}
-  })
-  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'XiaFeixuan-BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true
+  })*/
+  let welcom = 'https://telegra.ph/file/aab124271570c51f76aac.jpg'
+
+  let godbye = 'https://telegra.ph/file/deaf59bc3e5216eaae814.jpg'
+  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://www.instagram.com/_ctzhid/',
+    mediaType: 2, 
+    description: sgc,
+    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    body: wm,
+    thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
+    sourceUrl: sig
      }}
   })
   
@@ -1359,6 +1376,17 @@ export async function deleteUpdate(message) {
             return
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.antidelete)
+            return
+            this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi *@${participant.split`@`[0]}* telah menghapus pesan.
+Untuk mematikan fitur ini, ketik
+*.off antidelete*
+
+Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
+*.delete*`, author, '🔖 Matikan Fitur', '.off antidelete', 'ℹ️ Menu', '.menu', msg, adReply)
+        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+    } catch (e) {
+        console.error(e)
+    }
 }
 
 global.dfail = (type, m, conn) => {
@@ -1374,9 +1402,9 @@ global.dfail = (type, m, conn) => {
         //unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ', 
         restrict: '*ʀᴇsᴛʀɪᴄᴛ* • ʀᴇsᴛʀɪᴄᴛ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴅɪᴄʜᴀᴛ ɪɴɪ',
     }[type]
-    if (msg) return conn.send2ButtonDoc(m.chat, msg, author, 'Premium', '/premium', 'Menu', '/menu', fakes, adReply)
+    if (msg) return conn.send2ButtonDoc(m.chat, msg, author, '💌 Creator', '.creator', '🎀 Menu', '.menu', fakes, adReply)
     let msgg = {
-    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ \nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
+    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
 }

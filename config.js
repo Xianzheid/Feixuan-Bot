@@ -622,7 +622,7 @@ global.cmenut = '❏––––––『' //top
 global.cmenuh = '』––––––' //header
 global.cmenub = '┊✦ ' //body
 global.cmenuf = '┗━═┅═━––––––๑\n' //footer
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\nhttps://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A    ' //after
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n  ' //after
 global.pmenus = '|' //pembatas menu selector
 
 global.htki = '––––––『' // Hiasan Titile (KIRI)
@@ -636,7 +636,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 global.stickpack = 'Creator '
 global.stickauth = `©Xianzhe ID`
 
-global.multiplier = 30 // The higher, The harder levelup
+global.multiplier = 10 // The higher, The harder levelup
 
 /*============== EMOJI ==============*/
 global.rpg = {

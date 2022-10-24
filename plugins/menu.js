@@ -6,7 +6,7 @@ import os from 'os'
 import fs from 'fs'
 import fetch from 'node-fetch'
 const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
-let emot = `${pickRandom(['⎔', '✦','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
+let emot = `${pickRandom(['⎔','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
 	
 const defaultMenu = {
   before: `
@@ -32,7 +32,7 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
   header: '⃝▣──「 %category 」───⬣',
   body: `${emot} %cmd %isPremium %islimit`,
   footer: '▣───────────⬣\n',
-  after: `%c4 %me`,
+  after: `${sgc}`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   let res = JSON.parse(readFileSync('./json/emoji.json'))
@@ -303,8 +303,7 @@ const sections = [
         },
 ]
 
-let tek = `✧──────────────···[ Dashboard ]
-*${ucapan()} ${conn.getName(m.sender)}*
+let tek = `
 ╭━━━━━━━━━━━━━━━━┈─✧
 │  「 *USER INFO 克* 」
 │${emot} *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
@@ -324,9 +323,9 @@ let tek = `✧──────────────···[ Dashboard ]
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `©Creator Xianzhe ID\n\n${sgc}\n`,
+  footer: `©Creator Xianzhe ID`,
   mentions: await conn.parseMention(tek),
-  title: ``,
+  title: `${sgc}`,
   buttonText: `CLICK HERE ⎙`, 
   sections
 }
@@ -572,7 +571,7 @@ const listMessage = {
             document: { url: thumbdoc },
             jpegThumbnail: await (await fetch(urls)).buffer(),
             fileName: wm,
-            mimetype: td,
+            mimetype: image,
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text.trim(),
@@ -581,7 +580,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/Xianzhe-ID/'
                     }
                 },
                 {
@@ -613,7 +612,7 @@ const listMessage = {
        //await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
 
     //------------------- 2BUTTON VID
-    // conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/XZrK6yQ/transformers.jpg' }, text, footer: 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest❐', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
+    // conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/XZrK6yQ/transformers.jpg' }, text', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest❐', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
 
     // FIX MENU WHATSAPP BASE NEW DAN BAKAL EXPIRED SAAT MARK SUDAH FIX WHATSAPP UPDATE ENTAH VERSI BERAPA
     // MAU YANG NO ENC 10K AJA , MINAT PC GW wa.me/6282127487538
@@ -681,7 +680,7 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Kok hai kak"
+  let res = "hai kak"
   if (time >= 4) {
     res = "Pagi Lord"
   }

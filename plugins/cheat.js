@@ -1,6 +1,6 @@
 const rewards = {
-  exp: 999999,
-  money: 999999,
+  exp: 99999,
+  money: 99999,
   potion: 999,
 }
 const cooldown = 1
@@ -13,11 +13,10 @@ let handler = async (m,{ conn} ) => {
     user[reward] += rewards[reward]
     text += `*+${rewards[reward]}* ${global.rpg.emoticon(reward)}${reward}\n`
   }
-  conn.sendButton(m.chat,`${htki} DAILY ${htka}`, text.trim(), null, ['Cheat Lagi', '.cheat']],m)
+  conn.sendButton(m.chat,`${htki} CHEAT ${htka}`, text.trim(), null, ['Cheat Lagi', '.cheat']],m)
   user.lastclaim = new Date * 1
 }
-handler.help = ['claim']
-handler.tags = ['xp']
+
 handler.command = /^(cheat)$/i
 handler.owner = true
 handler.cooldown = cooldown

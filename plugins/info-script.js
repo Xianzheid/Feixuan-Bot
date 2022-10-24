@@ -7,7 +7,7 @@ let str = `*https://github.com/Xianzhe-ID/XiaFeixuan-Bot*
 `
 let wibu = `https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButton( m.chat, caption, wm, null, [`⋮☰ Menu`, `.menu`], m)
+conn.sendButton( m.chat, wm, null, [`Menu`, `.menu`], m)
           }
 handler.help = ['source code']
 handler.tags = ['info']

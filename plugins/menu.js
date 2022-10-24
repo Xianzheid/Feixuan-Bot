@@ -567,10 +567,10 @@ const listMessage = {
 
 //-------DOC TEMPLATE
     const message = { 
-            document: { url: 'https://telegra.ph/file/ddda3405b847c58198684.jpg' },
+            /*document: { url: 'https://telegra.ph/file/ddda3405b847c58198684.jpg' },
             jpegThumbnail: await (await fetch(urls)).buffer(),
             fileName: wm,
-            mimetype: image,
+            mimetype: doc,
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text.trim(),

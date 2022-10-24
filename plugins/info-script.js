@@ -9,10 +9,10 @@ Nih ada santai bro....
 https://github.com/ImYanXiao/Elaina-MultiDevice
 
 Pengen yang udah di recode oleh owner?
-http://wa.me/6285326781097?text=Permisi+banh`
+https://github.com/Xianzhe-ID/XiaFeixuan-Bot`
 
-let wibu = `https://telegra.ph/file/ddda3405b847c58198684.jpg` 
-let thumb = await(await fetch(wibu)).buffer()
+let kntl = `https://telegra.ph/file/ddda3405b847c58198684.jpg` 
+let thumb = await(await fetch(kntl)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/xianzhe_xx",
     mediaType: "image",

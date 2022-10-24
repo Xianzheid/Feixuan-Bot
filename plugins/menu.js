@@ -303,8 +303,7 @@ const sections = [
         },
 ]
 
-let tek = `
-╭━━━━━━━━━━━━━━━━┈─✧
+let tek = `╭━━━━━━━━━━━━━━━━┈─✧
 │  「 *USER INFO 克* 」
 │${emot} *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}

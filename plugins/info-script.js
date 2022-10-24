@@ -9,9 +9,8 @@ Nih ada santai bro....
 https://github.com/ImYanXiao/Elaina-MultiDevice
 
 Pengen yang udah di recode oleh owner?
-Script bot ini dijual bila kalian mau bisa chat owner
+http://wa.me/6285326781097?text=Permisi+banh`
 
-wa.me/6282127487538`
 let wibu = `https://telegra.ph/file/ddda3405b847c58198684.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,

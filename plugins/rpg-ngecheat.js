@@ -16,11 +16,11 @@ let randomaku5 = `${Math.floor(Math.random() * 1)}`
 
 .trim()
 
-let rbrb1 = (randomaku1 * 99999999)
-let rbrb2 = (randomaku2 * 99999999) 
-let rbrb3 = (randomaku3 * 99999999)
-let rbrb4 = (randomaku4 * 99999999)
-let rbrb5 = (randomaku5 * 99999999)
+let rbrb1 = (randomaku1 * 999999)
+let rbrb2 = (randomaku2 * 999999) 
+let rbrb3 = (randomaku3 * 999999)
+let rbrb4 = (randomaku4 * 999999)
+let rbrb5 = (randomaku5 * 999999)
 
 var zero1 = `${rbrb1}`
 var zero2 = `${rbrb2}`
@@ -37,10 +37,10 @@ var Xianzhe2 = `
 `
 
 var hsl = `
-*—[ Hasil Cheat ${name} ]—*
- ➕ Uang = [ ${zero4} ]
- ➕ Exp = [ ${zero5} ] 
- ➕ Warn = +1		 
+*â€”[ Hasil Cheat ${name} ]â€”*
+ âž• Uang = [ ${zero4} ]
+ âž• Exp = [ ${zero5} ] 
+ âž• Warn = +1		 
 ${wm}
 `
 
@@ -58,16 +58,9 @@ setTimeout(() => {
                      setTimeout(() => {
                      m.reply(`${Xianzhe2}`)
                      }, 0) 
-                    
-                     setTimeout(() => {
-                     m.reply(`${Xianzhe1}`)
-                     }, 0) 
-                     
-                     setTimeout(() => {
-                     m.reply('Seacrh File')
-                     }, 0) 
+
   user.lastngojek = new Date * 1
-    } else conn.sendButton(m.chat, `Cooldown\n�� *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, `Cooldown\n•” *${timers}*`, wm, 'inventory', '.inv', m )
 }
 handler.help = ['ngecheat']
 handler.tags = ['rpg']

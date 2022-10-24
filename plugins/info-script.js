@@ -2,12 +2,12 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://github.com/XianzheID/XiaFeixuat-Bot*
+let str = `*https://github.com/Xianzhe-ID/XiaFeixuan-Bot*
 
 `
-let wibu = `https://telegra.ph/file/7f49101f4824088555a38.jpg` 
+let wibu = `https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+/*conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/xianzhe_xx",
     mediaType: "image/jpg",
     description: "https://instagram.com/xianzhe_xx", 
@@ -16,7 +16,7 @@ conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { exter
     thumbnail: thumb,
     sourceUrl: sig
   }
-  } }) 
+  } })*/
           }
 handler.help = ['source code']
 handler.tags = ['info']

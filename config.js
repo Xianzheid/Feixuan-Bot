@@ -74,7 +74,7 @@ global.nameown = 'Xianzhe ID'
 
 /*============== Github Thanks To ==============*/
 global.namagithub = 'XianzheID' // nama github lu
-global.linkgithub = 'https://github.com/xianzheid' // tarok link github lu
+global.linkgithub = 'https://github.com/xianzhe-id' // tarok link github lu
 
 // klau kgk ada github kasih tanda '-' aja biar kgk error
 
@@ -160,7 +160,7 @@ global.giflogo = 'https://telegra.ph/file/5aed3d54ea66124f69a5e.mp4'
 global.thumbs = ['https://telegra.ph/file/5b0e97331a147f2036888.jpg']
 global.fla = 'https://telegra.ph/file/7c31849e2d4c33bb45462.mp4'
 global.thumbnailUrl = [
-'https://telegra.ph/file/5b0e97331a147f2036888.jpg']
+'https://telegra.ph/file/2cd3626c740ba091c98ff.jpg', 'https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg', 'https://telegra.ph/file/590f94b0907c9cafb7494.jpg', 'https://telegra.ph/file/2cd3626c740ba091c98ff.jpg', 'https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg', 'https://telegra.ph/file/590f94b0907c9cafb7494.jpg', 'https://telegra.ph/file/ddda3405b847c58198684.jpg']
 
 global.flaaa2 = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
@@ -174,7 +174,7 @@ global.flaaa = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
-global.hwaifu2 = ['https://telegra.ph/file/5b0e97331a147f2036888.jpg']
+global.hwaifu2 = ['https://telegra.ph/file/2cd3626c740ba091c98ff.jpg', 'https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg', 'https://telegra.ph/file/590f94b0907c9cafb7494.jpg', 'https://telegra.ph/file/2cd3626c740ba091c98ff.jpg', 'https://telegra.ph/file/f8e9f27ae13fc71e1fde7.jpg', 'https://telegra.ph/file/590f94b0907c9cafb7494.jpg', 'https://telegra.ph/file/ddda3405b847c58198684.jpg']
 
 /*============== HENTAI ==============*/ 
 //OPTIONS

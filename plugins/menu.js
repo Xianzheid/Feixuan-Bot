@@ -9,8 +9,7 @@ const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromCon
 let emot = `${pickRandom(['⎔', '✦','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
 	
 const defaultMenu = {
-  before: `
-╭─────═[ INFO USER ]═─────⋆
+  before: `╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Name:* %name
 ${emot}│☂︎ *Tag:* %tag
@@ -33,7 +32,7 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
   body: `${emot} %cmd %isPremium %islimit`,
-  footer: '▣───────────⬣\nWA Group\n${sgc}',
+  footer: '▣───────────⬣\n WA Group\n ${sgc}',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
@@ -305,7 +304,7 @@ const sections = [
         },
 ]
 
-let tek = ╭⃝━━━━━━━━━━━━━━━━┈─✧
+let tek = `╭⃝━━━━━━━━━━━━━━━━┈─✧
 │  「 *USER INFO 克* 」
 │${emot} *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}

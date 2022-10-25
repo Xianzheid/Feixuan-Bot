@@ -1,4 +1,4 @@
-//*import axios from "axios"
+import axios from "axios"
 let handler = async (m, {command, conn}) => {
 if (command == 'akira') {
 let haha = await conn.getFile(`https://raw.githubusercontent.com/WH-MODS-BOT/scrape/main/akira.json`)

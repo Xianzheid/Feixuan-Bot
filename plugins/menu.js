@@ -6,14 +6,13 @@ import os from 'os'
 import fs from 'fs'
 import fetch from 'node-fetch'
 const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
-let emot = `${pickRandom(['⎔','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
+let emot = `${pickRandom(['⎔','⭔', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
 	
 const defaultMenu = {
   before: `
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Name:* %name
-${emot}│☂︎ *Tag:* %tag
 ${emot}│☂︎ *Premium:* %prems
 ${emot}│☂︎ *Limit:* %limit
 ${emot}│☂︎ *Money:* %money
@@ -31,8 +30,8 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
   body: `${emot} %cmd %isPremium %islimit`,
-  footer: '▣───────────⬣\n',
-  after: `${sgc}`,
+  footer: '▣───────────⬣\nWA Group\n${sgc}',
+  after: `Jangan spam ya kids`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   let res = JSON.parse(readFileSync('./json/emoji.json'))
@@ -322,9 +321,9 @@ let tek = `╭━━━━━━━━━━━━━━━━┈─✧
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `©Creator Xianzhe ID`,
+  footer: `©Creator Xianzhe ID\n${sig}`,
   mentions: await conn.parseMention(tek),
-  title: `${sgc}`,
+  title: ``,
   buttonText: `CLICK HERE ⎙`, 
   sections
 }
@@ -432,10 +431,9 @@ const listMessage = {
   "product": {
   "productImage":{
   "mimetype": "image/jpeg",
-  "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
-    },
-  "title": `${ucapan()}`,
-  "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
+  "jpegThumbnail": 'https://telegra.ph/file/ddda3405b847c58198684.jpg'
+  "title": `©XianzheID`,
+  "description": 'XiaFeixuan Bot - MultiDevice',
   "currencyCode": "US",
   "priceAmount1000": "100",
   "retailerId": wm,
@@ -446,9 +444,9 @@ const listMessage = {
   }
   }
   
-    let urls = pickRandom(['https://telegra.ph/file/3a7ce94f64cfbc7f34872.jpg'])
+    let urls = 'https://telegra.ph/file/ddda3405b847c58198684.jpg'
   
-    const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+    const pp = await conn.profilePictureUrl(urls).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
     
     //FAKE TROLI
 
@@ -520,7 +518,7 @@ const listMessage = {
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Wait Ya Kak. . .*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -531,7 +529,7 @@ const listMessage = {
             title: `${htjava} ${namebot}`,
             body: titlebot,
             description: titlebot,
-            mediaType: 2,
+            mediaType: image/jpg,
           thumbnail: await(await fetch(thumb2)).buffer(),
          mediaUrl: sig
         }

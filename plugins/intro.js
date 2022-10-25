@@ -7,11 +7,7 @@ m.reply(`
 │ *Nama     :* 
 │ *Gender   :* 
 │ *Umur      :* 
-│ *Hobby    :* 
-│ *Kelas      :* 
-│ *Asal         :* 
-│ *Agama    :* 
-|  *Status     :* 
+│ *Asal        :*
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `.trim()) // Tambah sendiri kalo mau
 }

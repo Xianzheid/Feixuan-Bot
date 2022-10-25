@@ -6,13 +6,14 @@ import os from 'os'
 import fs from 'fs'
 import fetch from 'node-fetch'
 const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
-let emot = `${pickRandom(['⎔','⭔', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
+let emot = `${pickRandom(['⎔', '✦','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
 	
 const defaultMenu = {
   before: `
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Name:* %name
+${emot}│☂︎ *Tag:* %tag
 ${emot}│☂︎ *Premium:* %prems
 ${emot}│☂︎ *Limit:* %limit
 ${emot}│☂︎ *Money:* %money
@@ -21,6 +22,8 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 ┬│☂︎ *Database:* %rtotalreg dari %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
+
+▣──「 *Jangan Spam Ya* 」──▣
 
 ⃝▣──「 *INFO CMD* 」───⬣
 │ *Ⓟ* = Premium
@@ -31,7 +34,7 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
   header: '⃝▣──「 %category 」───⬣',
   body: `${emot} %cmd %isPremium %islimit`,
   footer: '▣───────────⬣\nWA Group\n${sgc}',
-  after: `Jangan spam ya kids`,
+  after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   let res = JSON.parse(readFileSync('./json/emoji.json'))
@@ -302,14 +305,14 @@ const sections = [
         },
 ]
 
-let tek = `╭━━━━━━━━━━━━━━━━┈─✧
+let tek = ╭⃝━━━━━━━━━━━━━━━━┈─✧
 │  「 *USER INFO 克* 」
 │${emot} *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 │${emot} *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 │${emot} *Creator:* ©Xianzhe ID
 │
-├━━━━━━━━━━━━━━━━┈─⋆
+├⃝━━━━━━━━━━━━━━━━┈─⋆
 │  「 *INFO BOT 比* 」
 │${emot} Aktif selama ${mpt}
 │${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
@@ -318,10 +321,10 @@ let tek = `╭━━━━━━━━━━━━━━━━┈─✧
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
-╰━━━━━━━━━━━━━━━━┈─◂`
+╰⃝━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `©Creator Xianzhe ID\n${sig}`,
+  footer: `©Creator XianzheID\nInstagram :\n${sig}\n`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `CLICK HERE ⎙`, 
@@ -431,9 +434,10 @@ const listMessage = {
   "product": {
   "productImage":{
   "mimetype": "image/jpeg",
-  "jpegThumbnail": 'https://telegra.ph/file/ddda3405b847c58198684.jpg'
-  "title": `©XianzheID`,
-  "description": 'XiaFeixuan Bot - MultiDevice',
+  "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
+    },
+  "title": `${ucapan()}`,
+  "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
   "currencyCode": "US",
   "priceAmount1000": "100",
   "retailerId": wm,
@@ -444,9 +448,9 @@ const listMessage = {
   }
   }
   
-    let urls = 'https://telegra.ph/file/ddda3405b847c58198684.jpg'
+    let urls = pickRandom(['https://telegra.ph/file/3a7ce94f64cfbc7f34872.jpg'])
   
-    const pp = await conn.profilePictureUrl(urls).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+    const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
     
     //FAKE TROLI
 
@@ -518,7 +522,7 @@ const listMessage = {
 
     }
 
-    conn.reply(m.chat, '*Wait Ya Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -529,7 +533,7 @@ const listMessage = {
             title: `${htjava} ${namebot}`,
             body: titlebot,
             description: titlebot,
-            mediaType: image/jpg,
+            mediaType: 2,
           thumbnail: await(await fetch(thumb2)).buffer(),
          mediaUrl: sig
         }
@@ -565,10 +569,10 @@ const listMessage = {
 
 //-------DOC TEMPLATE
     const message = { 
-            document: { url: 'https://telegra.ph/file/ddda3405b847c58198684.jpg' },
+            document: { url: thumbdoc },
             jpegThumbnail: await (await fetch(urls)).buffer(),
             fileName: wm,
-            mimetype: doc,
+            mimetype: td,
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text.trim(),
@@ -609,7 +613,7 @@ const listMessage = {
        //await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
 
     //------------------- 2BUTTON VID
-    // conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/XZrK6yQ/transformers.jpg' }, text', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest❐', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
+    // conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/XZrK6yQ/transformers.jpg' }, text, footer: 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest❐', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
 
     // FIX MENU WHATSAPP BASE NEW DAN BAKAL EXPIRED SAAT MARK SUDAH FIX WHATSAPP UPDATE ENTAH VERSI BERAPA
     // MAU YANG NO ENC 10K AJA , MINAT PC GW wa.me/6282127487538
@@ -677,7 +681,7 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "hai kak"
+  let res = "Kok hai kak"
   if (time >= 4) {
     res = "Pagi Lord"
   }

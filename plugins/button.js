@@ -2,9 +2,9 @@ let handler = async (m, { conn, text }) => {
     let yh = global.sange
     let url = yh[Math.floor(Math.random() * yh.length)]
     let kntl = mmk
-    conn.sendButton(m.chat, null , 'https://instagram.com/xianzhe_xx', url, [['XianxheID', kntl]], m)
+    conn.sendButton(m.chat, '🥵🥵🥵' , 'https://instagram.com/xianzhe_xx', url, [['NEXT', '${kntl}']], m)
   }
-  handler.command = /^(XianzheID)$/i
+  handler.command = /^(xyz)$/i
   handler.tags = ['owner']
   handler.help = ['owner']
   handler.owner = true

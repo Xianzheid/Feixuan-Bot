@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
-    let yh = global.asupan
+    let yh = global.sange
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'Nih kak', 'Instagram :\nhttps://īnstagram.com/xianzhe_xx', url, [['NEXT', '.loli']], m)
+    conn.sendButton(m.chat, 'Nih kak', 'https://instagram.com/xianzhe_xx', url, [['NEXT', '.loli']], m)
   }
   handler.command = /^(loli)$/i
   handler.tags = ['premium']
@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
   handler.premium = true
   export default handler
   
- global.asupan = ["https://iili.io/DRPGJn.jpg",
+ global.sange = ["https://iili.io/DRPGJn.jpg",
 "https://iili.io/DRP0lt.jpg",
 "https://iili.io/DRPlfI.jpg",
 "https://iili.io/DRPaiN.jpg",

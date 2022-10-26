@@ -1,13 +1,13 @@
 let handler = async (m, { conn, text }) => {
     let yh = global.asupan
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'Nih kak', 'https://īnstagram.com/xianzhe_xx', url, [['NEXT', '.loli']], m)
+    conn.sendButton(m.chat, 'Nih kak', 'https://īnstagram.com/xianzhe_xx', url, [['NEXT', '.lolicon']], m)
   }
-  handler.command = /^(loli)$/i
-  handler.tags = ['limit']
-  handler.help = ['asupanloli']
+  handler.command = /^(lolicon)$/i
+  handler.tags = ['premium']
+  handler.help = ['lolicon']
   handler.premium = true
-handler.register = true
+
   export default handler
   
  global.asupan = ["https://iili.io/DRPGJn.jpg",

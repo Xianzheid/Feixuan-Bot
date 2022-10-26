@@ -1,14 +1,12 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw ``
-    const res = await fetch('https://raw.githubusercontent.com/Xianzhe-ID/XianzheID-NSFW/XianzheID/JSON-FILE/loli.json')
-    let image = json[Math.floor(Math.random())]
-    let link = image
-    let whmods = `Sange ya🥵`
-    conn.sendButton(m.chat, whmods, link, [['Next', `.${command}`]], m)
+ let res = await fetch('https://raw.githubusercontent.com/Xianzhe-ID/XianzheID-NSFW/XianzheID/JSON-FILE/loli.json')
+if (!res.ok) throw await `${res.status} ${res.statusText}`;
+let json = await res.json();
+let url = json[Math.floor(Math.random() * json.length)]
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Nih kak' , ['Next', `.${command}`], m)
 }
-
 handler.command = /^(lolicon)$/i
 handler.tags = ['premium']
 handler.help = ['loli', 'premium']

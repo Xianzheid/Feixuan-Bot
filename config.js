@@ -1,5 +1,5 @@
 // S C R I P T  O R I  B Y  Bochilgaming And KANNACHAN 🔭
-// Ditulis Ulang Oleh WH MODS DEV
+// Ditulis Ulang Oleh WH MODS DEV  &&  Xianzhe-ID
 // Credits, jangan dihapus atau diubah!
 
 // - - THANKS TO - -
@@ -10,7 +10,8 @@
 // • Kannachann
 // • FahriAdison
 // • The.Sad.Boy01
-// • Rlxfly
+// • Rlxfly.
+// • Xianzhe-ID
 // • Rasel comel
 // • ImYanXiao
 // • WH MODS DEV
@@ -52,7 +53,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 global.sig = 'https://īnstagram.com/xianzhe_xx' // ig
 global.sgh = 'https://gīthub.com/Xianzhe-ID/' // github
 global.sgc = 'https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A' // group whatsapp
-global.sdc = 'https://www.discord.com'//discord
+global.sdc = '-'//discord
 global.snh = 'https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9Al' // my youtube channel
 global.sfb = 'https://www.facebook.com/' // facebook
 global.syt = 'https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9Al' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
@@ -64,7 +65,7 @@ global.pgopay = '+62 853-2678-1097' //gopay
 global.plinkaja = '-' //link aja
 global.ppulsa = '+62 853-2678-1097' //telkomsel
 global.ppulsa2 = '+62 853-5880-5324' // kalau ada kartu lain isi aja
-global.psaweria = 'https://sawerīa.com/xianzhe'
+global.psaweria = 'https://saweria.com/xianzhe'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6285358805324'
@@ -74,7 +75,7 @@ global.nameown = 'Xianzhe ID'
 
 /*============== Github Thanks To ==============*/
 global.namagithub = 'XianzheID' // nama github lu
-global.linkgithub = 'https://gīthub.com/xianzhe-id' // tarok link github lu
+global.linkgithub = 'https://gīthub.com/Xianzhe-ID' // tarok link github lu
 
 // klau kgk ada github kasih tanda '-' aja biar kgk error
 
@@ -87,9 +88,9 @@ global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182
 global.owner = [
   ['6285326781097', 'Xianzhe ID', true],
   ['6285358805324', 'Xia Feixuan', true],
-  ['-', 'ISI KALAU ADA', true],
-  ['-', 'ISI KALAU ADA', true],
-  ['-', 'ISI KALAU ADA', true]
+  ['6285326781097', 'Xianzhe ID', true],
+  ['6285326781097', 'Xianzhe ID', true],
+  ['6285326781097', 'Xianzhe ID', true]
     //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
@@ -140,8 +141,8 @@ global.APIKeys = { // APIKey Here
 /*============== WATERMARK ==============*/
 global.wm = '「 Xia Feixuan-V4 」' //Main Watermark
 global.wm2 =  'http://īnstagram.com/xianzhe_xx/'
-global.wm3 = '/nhttps://īnstagram.com/xianzhe_xx/n'
-global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+global.wm3 = 'Xianzhe ID'
+global.botdate = `${week} ${date}`
 global.bottime = `T I M E : ${wktuwib}`
 global.titlebot = `⫹⫺ WhatsApp Bot | By Xianzhe ID`
 global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
@@ -208,7 +209,7 @@ global.drtf = 'text/rtf'
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*=========== FAKE SIZE ===========*/
-global.fsizedoc = '404' // default 10TB
+global.fsizedoc = '9999999' // default 10TB
 global.fpagedoc = '404'
 
 /*=========== HIASAN ===========*/

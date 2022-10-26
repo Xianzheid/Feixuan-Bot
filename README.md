@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    <img src="https://i.ibb.co/TYnJgRD/Pics-Art-10-12-09-43-10.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://telegra.ph/file/73751fa7e99cfb5f92684.jpg" width="120%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
 <p align="center">
@@ -243,5 +243,4 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 
 ## ```Recode By ✏️```
 [![WH-MODS-BOT](https://github.com/WH-MODS-BOT.png?size=70)](https://github.com/WH-MODS-BOT)
-
-[![Xianzhe-ID](https://github.com/xianzheid.png?size=70)](https://github.com/Xianzhe-ID)
+[![Xianzhe-ID](https://github.com/xianzhe-id.png?size=70)](https://github.com/Xianzhe-ID)

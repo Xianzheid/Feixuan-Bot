@@ -1,12 +1,12 @@
 let handler = async (m, { conn, text }) => {
     let yh = global.sange
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'Nih kak', 'https://instagram.com/xianzhe_xx', url, [['NEXT', '.loli']], m)
+    conn.sendButton(m.chat, 'Nih kak', 'https://instagram.com/xianzhe_xx', url, [['NEXT', 'loli']], m)
   }
-  handler.command = /^(loli)$/i
-  handler.tags = ['limit']
-  handler.help = ['limitmenu']
-  handler.register = true
+  handler.command = /loli/i
+  handler.tags = ['premium']
+  handler.help = ['loli']
+  handler.premium = true
   export default handler
   
  global.sange = ["https://iili.io/DRPGJn.jpg",

@@ -426,7 +426,7 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
  let floc = {quoted: { key: { participant : '0@s.whatsapp.net'}, message: { "liveLocationMessage": { "caption": `Menu`,"h": `Xianzhe ID `, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg')}} }}
  let fdocs = {quoted: { key : { participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `Creator Xianzhe ID !`,  jpegThumbnail: fs.readFileSync('./media/xianzhe1.jpg') }}}}
  let fgclink = {quoted: {key: {participant : '0@s.whatsapp.net'},message: {groupInviteMessage: {groupJid: "17608914335-1625305606@g.us",inviteCode: null,groupName: `Hai ${name}!`,  caption: wm,  jpegThumbnail: fs.readFileSync('./media/xianzhe3.jpg') }} }}
- let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `©XianzheID`, "h": `XFS`, 'seconds': '999999999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./media/xianzhe.gif') } } } }
+ let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `©XianzheID`, "h": `XFS`, 'seconds': '999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg') } } } }
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
  
     let ftoko = {

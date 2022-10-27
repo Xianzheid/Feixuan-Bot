@@ -3,7 +3,7 @@ let handler = async (m, { conn, text }) => {
     let url = yh[Math.floor(Math.random() * yh.length)]
     conn.sendButton(m.chat, 'Nih kak', 'Instagram :\nhttps://īnstagram.com/xianzhe_xx', url, [['NEXT', '.hutao']], m)
   }
-  handler.command = /^(hutao)$/i
+  handler.command = /hutao/i
   handler.tags = ['limit']
   handler.help = ['limitmenu']
   handler.register = true

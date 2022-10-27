@@ -423,10 +423,10 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
 
     //----------------- FAKE
  let fvn = {quoted: { key: {participant : '0@s.whatsapp.net'},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "999999999","ptt": "true"} } }}
- let floc = {quoted: { key: { participant : '0@s.whatsapp.net'}, message: { "liveLocationMessage": { "caption": `Menu`,"h": `${owner}`, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg')}} }}
- let fdocs = {quoted: { key : { participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `Creator ${owner}!`,  jpegThumbnail: fs.readFileSync('./media/xianzhe1.jpg') }}}}
+ let floc = {quoted: { key: { participant : '0@s.whatsapp.net'}, message: { "liveLocationMessage": { "caption": `Menu`,"h": `Xianzhe ID `, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg')}} }}
+ let fdocs = {quoted: { key : { participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `Creator Xianzhe ID !`,  jpegThumbnail: fs.readFileSync('./media/xianzhe1.jpg') }}}}
  let fgclink = {quoted: {key: {participant : '0@s.whatsapp.net'},message: {groupInviteMessage: {groupJid: "17608914335-1625305606@g.us",inviteCode: null,groupName: `Hai ${name}!`,  caption: wm,  jpegThumbnail: fs.readFileSync('./media/xianzhe3.jpg') }} }}
- let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `Hai Kak ${name}!`, "h": `Hmm`, 'seconds': '999999999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg') } } } }
+ let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `©XianzheID`, "h": `XFS`, 'seconds': '999999999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./media/xianzhe.gif') } } } }
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
  
     let ftoko = {
@@ -442,8 +442,8 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
   "mimetype": "image/jpeg",
   "jpegThumbnail": fs.readFileSync('./media/xianzhe2.jpg'),
     },
-  "title": `Creator ${owner}`,
-  "description": 'XiaFeixuan-Bot | MultiDevice,
+  "title": `Creator Xianzhe ID `,
+  "description": 'XiaFeixuan-Bot | MultiDevice',
   "currencyCode": "US",
   "priceAmount1000": "100",
   "retailerId": wm,
@@ -480,7 +480,7 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
 
     surface : 1,
 
-    message: `Creator ${owner}`, 
+    message: `Creator Xianzhe ID `, 
 
     orderTitle: `▮Menu ▸`,
 
@@ -528,7 +528,7 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftoko) 
 
     
     //------------------< MENU >----------------
@@ -563,7 +563,7 @@ global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
   accuracyInMeters: 100,
   speedInMps: 999,
   degreesClockwiseFromMagneticNorth: 99,
-  caption: `Creator ${owner}`,
+  caption: `Creator Xianzhe ID `,
   sequenceNumber: 774236889,
   timeOffset: 8600,
   jpegThumbnail: await(await fetch(thumb)).buffer(),

@@ -11,13 +11,11 @@ let str = `${global.wm}
 │ • Ovo : ${global.povo}
 │ • Link Aja : ${global.plinkaja}
 ❏────`
-let wibu = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
-"https://telegra.ph/file/d921e3ccfd4c4ce6eac8f.jpg",
-"https://telegra.ph/file/7697fe40c5134598850d4.jpg"]
+let wibu = "https://telegra.ph/file/eda419a5204bc479bee57.jpg"
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "IMAGE",
+    mediaType: "image/jpg",
     description: "Xianzhe ID", 
     title: 'XiaFeixuan-Bot | MultiDevice',
     body: wm,

@@ -139,9 +139,9 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '「 Xia Feixuan-V4 」' //Main Watermark
+global.wm = '「 XianzheID 」' //Main Watermark
 global.wm2 =  'http://īnstagram.com/xianzhe_xx/'
-global.wm3 = 'Xianzhe ID'
+global.wm3 = 'XiaFeixuan-Bot MD'
 global.botdate = `${week} ${date}`
 global.bottime = `T I M E : ${wktuwib}`
 global.titlebot = `⫹⫺ WhatsApp Bot | By Xianzhe ID`

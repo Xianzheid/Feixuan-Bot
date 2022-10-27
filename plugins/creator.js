@@ -53,11 +53,11 @@ const listMessage = {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
         case 'kontak': 
-await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: ftroli { contextInfo: { externalAdReply: { showAdAttribution: true,
+await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "2",
+    mediaType: "image/jpg",
     description: sgc, 
-    title: 'My WhatsApp Group',
+    title: 'XiaFeixuan-Bot | Multi Device',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sig
@@ -83,6 +83,7 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
           case 'nomor':
           conn.reply(m.chat, teksnomor, m, { contextInfo: { mentionedJid: [nowner] }})
             break*/
+
             case 'bio':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 

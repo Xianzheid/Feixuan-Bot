@@ -1,6 +1,6 @@
 import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 let handler = async (m, { conn, text, participants }) => {
-  let users = participants.map(u => conn.decodeJid(u.id))
+  /*let users = participants.map(u => conn.decodeJid(u.id))*)
   let q = m.quoted ? m.quoted : m
   let c = m.quoted ? m.quoted : m.msg
   const msg = conn.cMod(m.chat,
@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, participants }) => {
       quoted: m,
       userJid: conn.user.id
     }),
-    text || q.text, conn.user.jid, null /*{ mentions: users }*/
+    text || q.text, conn.user.jid, { mentions: users }
   )
   await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }

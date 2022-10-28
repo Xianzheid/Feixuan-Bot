@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, participants }) => {
       quoted: m,
       userJid: conn.user.id
     }),
-    text || q.text, conn.user.jid, { mentions: users }
+    text || q.text, conn.user.jid, null /*{ mentions: users }*/
   )
   await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }

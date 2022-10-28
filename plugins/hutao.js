@@ -4,9 +4,9 @@ let handler = async (m, { conn, text }) => {
     conn.sendButton(m.chat, 'Nih kak', 'Instagram :\nhttps://īnstagram.com/xianzhe_xx', url, [['NEXT', '.hutao']], m)
   }
   handler.command = /hutao/i
-  handler.tags = ['limit']
+  handler.tags = ['limit','nsfw']
   handler.help = ['limitmenu']
-  handler.register = true
+  handler.register = false
   export default handler
   
  global.asupan = ["https://iili.io/thmOQV.jpg",

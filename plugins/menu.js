@@ -268,7 +268,7 @@ const sections = [
         },{
           title: `${htki} MENU MENFESS ${htka}`,
           rows: [
-            {title: `❐ ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Fitur Menfess Chat "},
+            {title: `❐ ${pmenus} Menfess Balas`, rowId: ".menfess", description: "Hanya bisa digunakan di Private Chat "},
           ]},{
         title: `${htki} MENU ${htka}`,
         rows: [

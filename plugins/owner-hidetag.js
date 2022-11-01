@@ -20,7 +20,7 @@ let handler = async (m, { conn, text, participants }) => {
 handler.tags = ['owner']
 handler.command = /^(ohidetag)$/i
 
-handler.group = true
+handler.group = false
 handler.owner = true
 
 export default handler

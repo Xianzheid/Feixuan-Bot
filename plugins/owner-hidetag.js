@@ -1,6 +1,6 @@
 import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 let handler = async (m, { conn, text, participants }) => {
-  let users = participants.map(u => conn.decodeJid(u.id))*/
+  let users = participants.map(u => conn.decodeJid(u.id))
   let q = m.quoted ? m.quoted : m
   let c = m.quoted ? m.quoted : m.msg
   const msg = conn.cMod(m.chat,
@@ -16,11 +16,9 @@ let handler = async (m, { conn, text, participants }) => {
   )
   await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }
-
 handler.tags = ['owner']
-handler.command = /^(ohidetag)$/i
+handler.command = /^(otag|oh|ohidetag|sagne)$/i
 
-handler.group = false
 handler.owner = true
 
 export default handler

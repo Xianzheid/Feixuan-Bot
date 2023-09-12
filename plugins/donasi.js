@@ -4,19 +4,20 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //let pp = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image')
 
 let str = `${global.wm}
-
 ┌─「 Donasi 」
-│ • *Telkomsel:* [${global.ppulsa}]
-│ • *Dana:* [${global.pdana}]
-│ • *Gopay:* [${global.pgopay}]
-│ • *Saweria:* [${global.psaweria}]
+│ • Telkomsel : ${global.ppulsa}]
+│ • Dana : ${global.pdana}
+│ • Gopay : ${global.pgopay}
+│ • Ovo : ${global.povo}
+│ • Link Aja : ${global.plinkaja}
 ❏────`
-let wibu = `https://telegra.ph/file/c60573400c709629410d0.jpg` 
+let wibu = "https://telegra.ph/file/eda419a5204bc479bee57.jpg"
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaurl: 'https://instagram.com/xianzhe_xx'
-    title: 'XiaFeixuan-IV MultiDevice',
-    description: 'instagram.com/xianzhe_xx'
+    mediaUrl: "https://Instagram.com/xianzhe_xx",
+    mediaType: "2",
+    description: "Xianzhe ID", 
+    title: 'XiaFeixuan-Bot | MultiDevice',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sig

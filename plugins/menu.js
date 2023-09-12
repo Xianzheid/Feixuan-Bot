@@ -9,8 +9,7 @@ const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromCon
 let emot = `${pickRandom(['⎔', '✦','⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊'])}`
 	
 const defaultMenu = {
-  before: `
-╭─────═[ INFO USER ]═─────⋆
+  before: `╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Name:* %name
 ${emot}│☂︎ *Tag:* %tag
@@ -22,17 +21,18 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 ┬│☂︎ *Database:* %rtotalreg dari %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
+%readmore
+▣──「 *Jangan Spam Ya* 」──▣
 
 ⃝▣──「 *INFO CMD* 」───⬣
 │ *Ⓟ* = Premium
 │ *Ⓛ* = Limit
 ▣────────────⬣
-%readmore
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
   body: `${emot} %cmd %isPremium %islimit`,
   footer: '▣───────────⬣\n',
-  after: `%c4 %me`,
+  after: `©XianzheID`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   let res = JSON.parse(readFileSync('./json/emoji.json'))
@@ -254,7 +254,7 @@ const sections = [
     rows: [
         {title: `❐ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
         {title: `❐ ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `❐ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
+        {title: `❐ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan Waktu Bot Berjalan"}, 
         {title: `❐ ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
@@ -267,7 +267,7 @@ const sections = [
         },{
           title: `${htki} MENU MENFESS ${htka}`,
           rows: [
-            {title: `❐ ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
+            {title: `❐ ${pmenus} Menfess Balas`, rowId: ".menfess", description: "Hanya bisa digunakan di Private Chat "},
           ]},{
         title: `${htki} MENU ${htka}`,
         rows: [
@@ -303,16 +303,14 @@ const sections = [
         },
 ]
 
-let tek = `✧──────────────···[ Dashboard ]
-*${ucapan()} ${conn.getName(m.sender)}*
-╭━━━━━━━━━━━━━━━━┈─✧
+let tek = `╭⃝━━━━━━━━━━━━━━━━┈─✧
 │  「 *USER INFO 克* 」
 │${emot} *Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 │${emot} *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 │${emot} *Creator:* ©Xianzhe ID
 │
-├━━━━━━━━━━━━━━━━┈─⋆
+├⃝━━━━━━━━━━━━━━━━┈─⋆
 │  「 *INFO BOT 比* 」
 │${emot} Aktif selama ${mpt}
 │${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
@@ -321,10 +319,10 @@ let tek = `✧──────────────···[ Dashboard ]
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
-╰━━━━━━━━━━━━━━━━┈─◂`
+╰⃝━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `©Creator Xianzhe ID\n\n${sgc}\n`,
+  footer: `©XianzheID\nWhatsApp Group :\n${sgc}\n`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `CLICK HERE ⎙`, 
@@ -415,12 +413,19 @@ const listMessage = {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
+
+let yh = global.sange
+let url = yh[Math.floor(Math.random() * yh.length)]
+global.sange = ["https://telegra.ph/file/73751fa7e99cfb5f92684.jpg",
+"https://telegra.ph/file/d921e3ccfd4c4ce6eac8f.jpg",
+"https://telegra.ph/file/7697fe40c5134598850d4.jpg"]
+
     //----------------- FAKE
- let fvn = {quoted: { key: {participant : '0@s.whatsapp.net'},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "2022","ptt": "true"} } }}
- let floc = {quoted: { key: { participant : '0@s.whatsapp.net'}, message: { "liveLocationMessage": { "caption": `Menu`,"h": `${name}`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}} }}
- let fdocs = {quoted: { key : { participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `Hai Kak ${name}!`,  jpegThumbnail: fs.readFileSync('./thumbnail.jpg') }}}}
- let fgclink = {quoted: {key: {participant : '0@s.whatsapp.net'},message: {groupInviteMessage: {groupJid: "17608914335-1625305606@g.us",inviteCode: null,groupName: `Hai ${name}!`,  caption: wm,  jpegThumbnail: fs.readFileSync('./thumbnail.jpg') }} }}
- let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `Hai Kak ${name}!`, "h": `Hmm`, 'seconds': '999999999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg') } } } }
+ let fvn = {quoted: { key: {participant : '0@s.whatsapp.net'},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "999999999","ptt": "true"} } }}
+ let floc = {quoted: { key: { participant : '0@s.whatsapp.net'}, message: { "liveLocationMessage": { "caption": `Menu`,"h": `Xianzhe ID `, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg')}} }}
+ let fdocs = {quoted: { key : { participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `Creator Xianzhe ID !`,  jpegThumbnail: fs.readFileSync('./media/xianzhe1.jpg') }}}}
+ let fgclink = {quoted: {key: {participant : '0@s.whatsapp.net'},message: {groupInviteMessage: {groupJid: "17608914335-1625305606@g.us",inviteCode: null,groupName: `Hai ${name}!`,  caption: wm,  jpegThumbnail: fs.readFileSync('./media/xianzhe3.jpg') }} }}
+ let fgif = {quoted: {key: { participant : '0@s.whatsapp.net'}, message: {  "videoMessage": {  "title": `©XianzheID`, "h": `XFS`, 'seconds': '999',  'gifPlayback': 'true',  'caption': wm, 'jpegThumbnail': fs.readFileSync('./media/xianzhe2.jpg') } } } }
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
  
     let ftoko = {
@@ -434,10 +439,10 @@ const listMessage = {
   "product": {
   "productImage":{
   "mimetype": "image/jpeg",
-  "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
+  "jpegThumbnail": fs.readFileSync('./media/xianzhe2.jpg'),
     },
-  "title": `${ucapan()}`,
-  "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
+  "title": `Creator Xianzhe ID `,
+  "description": 'XiaFeixuan-Bot | MultiDevice',
   "currencyCode": "US",
   "priceAmount1000": "100",
   "retailerId": wm,
@@ -468,17 +473,17 @@ const listMessage = {
 
     orderMessage: {
 
-    itemCount : 2022,
+    itemCount : 999999,
 
     status: 1,
 
     surface : 1,
 
-    message: `Hai Kak ${name}!`, 
+    message: `Creator Xianzhe ID `, 
 
     orderTitle: `▮Menu ▸`,
 
-    thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
+    thumbnail: await (await fetch(hwaifu + 'Menu')).buffer(), //Gambarnye
 
     sellerJid: '0@s.whatsapp.net' 
 
@@ -502,7 +507,7 @@ const listMessage = {
 
     orderMessage: {
 
-    itemCount : 2022,
+    itemCount : 999999,
 
     status: 1,
 
@@ -512,7 +517,7 @@ const listMessage = {
 
     orderTitle: `▮Menu ▸`,
 
-    thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
+    thumbnail: await (await fetch(hwaifu + 'Loading')).buffer(), //Gambarnye
 
     sellerJid: '0@s.whatsapp.net' 
 
@@ -522,7 +527,7 @@ const listMessage = {
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftoko) 
 
     
     //------------------< MENU >----------------
@@ -557,7 +562,7 @@ const listMessage = {
   accuracyInMeters: 100,
   speedInMps: 999,
   degreesClockwiseFromMagneticNorth: 99,
-  caption: text.trim(),
+  caption: `Creator Xianzhe ID `,
   sequenceNumber: 774236889,
   timeOffset: 8600,
   jpegThumbnail: await(await fetch(thumb)).buffer(),
@@ -581,7 +586,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/Xianzhe-ID/'
                     }
                 },
                 {
@@ -613,14 +618,14 @@ const listMessage = {
        //await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
 
     //------------------- 2BUTTON VID
-    // conn.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/XZrK6yQ/transformers.jpg' }, text, footer: 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest❐', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
+    conn.send2ButtonImg(m.chat, { image: { url: 'https://telegra.ph/file/7697fe40c5134598850d4.jpg' }, text, footer: '', templateButtons: [{ quickReplyButton: { displayText: 'Menu', id: `.menu` }}, { quickReplyButton: { displayText: 'Owner', id: `.creator` }} ] })
 
     // FIX MENU WHATSAPP BASE NEW DAN BAKAL EXPIRED SAAT MARK SUDAH FIX WHATSAPP UPDATE ENTAH VERSI BERAPA
     // MAU YANG NO ENC 10K AJA , MINAT PC GW wa.me/6282127487538
     // MAU YANG NO ENC MENFESS BALAS NAMBAH 5K :), TOTAL HARGA 15K EXPIRED SAMPAI TANGGAL 20 OKTOBER 2022
 
     // KALAU UDAH LEWAT TANGGAL 20 OKTOBER 2022 HARGA TOTAL AKAN MENJADI 25K
-    function Y(J,F){var j=e();return Y=function(B,z){B=B-0xbd;var G=j[B];if(Y['\x61\x5a\x43\x4b\x54\x5a']===undefined){var f=function(P){var A='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';var h='',T='';for(var X=0x0,Z,I,E=0x0;I=P['\x63\x68\x61\x72\x41\x74'](E++);~I&&(Z=X%0x4?Z*0x40+I:I,X++%0x4)?h+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&Z>>(-0x2*X&0x6)):0x0){I=A['\x69\x6e\x64\x65\x78\x4f\x66'](I);}for(var y=0x0,V=h['\x6c\x65\x6e\x67\x74\x68'];y<V;y++){T+='\x25'+('\x30\x30'+h['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](y)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(T);};var R=function(P,A){var h=[],T=0x0,X,Z='';P=f(P);var I;for(I=0x0;I<0x100;I++){h[I]=I;}for(I=0x0;I<0x100;I++){T=(T+h[I]+A['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](I%A['\x6c\x65\x6e\x67\x74\x68']))%0x100,X=h[I],h[I]=h[T],h[T]=X;}I=0x0,T=0x0;for(var E=0x0;E<P['\x6c\x65\x6e\x67\x74\x68'];E++){I=(I+0x1)%0x100,T=(T+h[I])%0x100,X=h[I],h[I]=h[T],h[T]=X,Z+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](P['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](E)^h[(h[I]+h[T])%0x100]);}return Z;};Y['\x43\x46\x6e\x4f\x6e\x67']=R,J=arguments,Y['\x61\x5a\x43\x4b\x54\x5a']=!![];}var s=j[0x0],g=B+s,w=J[g];return!w?(Y['\x78\x7a\x58\x54\x61\x61']===undefined&&(Y['\x78\x7a\x58\x54\x61\x61']=!![]),G=Y['\x43\x46\x6e\x4f\x6e\x67'](G,z),J[g]=G):G=w,G;},Y(J,F);}function f(J,F){return Y(J- -0x156,F);}function e(){var s=['\x68\x59\x34\x76\x57\x36\x74\x63\x52\x72\x4b\x76\x43\x43\x6f\x46\x57\x37\x46\x63\x4b\x61\x4f','\x76\x6d\x6f\x45\x74\x38\x6f\x53\x57\x51\x71\x63\x57\x36\x53\x59\x6e\x32\x6e\x31\x73\x38\x6f\x73\x42\x61','\x7a\x77\x52\x63\x4b\x47\x62\x67\x68\x5a\x78\x63\x50\x73\x4e\x63\x48\x77\x2f\x64\x4f\x61','\x6d\x6d\x6f\x71\x57\x35\x4b\x50\x57\x36\x33\x64\x4e\x43\x6b\x4b\x57\x51\x68\x64\x52\x68\x33\x63\x47\x61\x57\x54','\x34\x50\x45\x38\x34\x50\x73\x47\x34\x50\x41\x6c\x34\x50\x45\x41\x34\x50\x45\x55\x34\x50\x73\x49\x34\x50\x73\x68\x34\x50\x32\x69\x6e\x38\x6f\x6b\x38\x6a\x49\x47\x52\x2f\x63\x55\x4b\x51\x5a\x57\x4e\x6b\x6b\x6e\x38\x6c\x4d\x72\x47\x56\x63\x52\x53\x6b\x4a\x57\x4b\x37\x67\x38\x38\x6a\x63\x74\x4c\x2f\x63\x4d\x4f\x79\x74\x58\x49\x37\x6f\x73\x57\x34\x52\x63\x49\x2b\x6b\x45\x4c\x45\x6b\x75\x4d\x6f\x6b\x78\x4b\x55\x6b\x75\x50\x45\x6b\x77\x4c\x55\x6b\x75\x4c\x45\x6b\x77\x49\x6f\x6b\x78\x4c\x47','\x57\x36\x74\x64\x4a\x38\x6b\x6d\x57\x35\x4b\x68\x6d\x43\x6f\x56','\x43\x38\x6f\x74\x77\x62\x37\x64\x55\x76\x65\x4d\x57\x52\x42\x63\x47\x53\x6b\x7a\x57\x37\x56\x63\x52\x67\x38\x54','\x45\x61\x78\x64\x51\x75\x4f','\x57\x35\x4e\x64\x48\x38\x6f\x30\x63\x49\x34','\x62\x38\x6f\x7a\x6a\x64\x44\x38\x57\x35\x33\x63\x4a\x43\x6f\x52\x57\x35\x43\x72\x6a\x78\x74\x64\x4c\x66\x4f','\x57\x34\x68\x63\x55\x38\x6b\x66\x57\x52\x53\x35\x57\x37\x5a\x64\x53\x38\x6b\x6d\x57\x51\x76\x62\x57\x52\x50\x59\x57\x34\x4f','\x57\x51\x2f\x48\x54\x7a\x4e\x48\x54\x6a\x37\x48\x54\x36\x4e\x48\x54\x34\x64\x64\x55\x2b\x67\x31\x47\x53\x55\x6a\x34\x42\x45\x66\x59\x6c\x38\x31\x34\x50\x36\x63\x57\x50\x64\x6c\x4e\x43\x55\x35\x57\x52\x30','\x57\x34\x2f\x64\x53\x71\x37\x64\x4a\x78\x47\x46\x57\x34\x56\x63\x52\x6d\x6b\x4c\x71\x38\x6f\x6f\x46\x2b\x67\x32\x53\x38\x55\x32\x64\x49\x33\x64\x54\x47','\x67\x59\x71\x45\x57\x36\x33\x63\x51\x62\x75\x42\x42\x43\x6f\x46\x57\x36\x6c\x63\x56\x71\x65','\x41\x53\x6f\x36\x64\x6d\x6b\x78','\x57\x52\x33\x63\x51\x38\x6b\x37\x57\x36\x38\x35\x57\x50\x33\x63\x4f\x63\x35\x57\x57\x51\x44\x57\x6a\x61','\x57\x51\x34\x53\x70\x49\x56\x63\x50\x53\x6f\x54\x70\x30\x4f\x4a\x71\x71\x64\x63\x56\x74\x61','\x57\x35\x54\x50\x57\x36\x74\x63\x56\x43\x6b\x38\x77\x6d\x6f\x52\x6d\x77\x75\x6a\x57\x36\x65\x48\x63\x57','\x79\x67\x64\x63\x4e\x61\x54\x68\x67\x75\x42\x63\x55\x49\x68\x63\x47\x32\x70\x64\x4a\x4b\x57','\x67\x6d\x6f\x76\x75\x64\x72\x72\x6c\x71','\x77\x43\x6f\x50\x42\x6d\x6f\x6b\x57\x51\x68\x64\x48\x38\x6f\x62','\x72\x38\x6f\x39\x77\x53\x6b\x6b\x57\x51\x33\x64\x4a\x38\x6f\x70\x62\x47\x61\x79\x57\x36\x78\x63\x4c\x77\x57','\x78\x43\x6f\x36\x61\x6d\x6b\x45\x46\x4c\x47','\x57\x51\x37\x63\x48\x43\x6b\x53\x77\x32\x52\x64\x51\x72\x74\x64\x4c\x6d\x6b\x63\x62\x57\x46\x63\x55\x49\x79','\x57\x51\x4f\x73\x73\x73\x68\x63\x55\x71','\x57\x36\x6d\x59\x6c\x59\x68\x63\x48\x53\x6f\x4f\x6e\x57'];e=function(){return s;};return e();}(function(J,F){function G(J,F){return Y(J- -0x391,F);}var j=J();while(!![]){try{var B=parseInt(G(-0x2cd,'\x5a\x33\x72\x75'))/0x1+parseInt(G(-0x2c2,'\x4d\x59\x6e\x6e'))/0x2*(-parseInt(G(-0x2c3,'\x66\x37\x7a\x32'))/0x3)+parseInt(G(-0x2ca,'\x70\x77\x5b\x6c'))/0x4+-parseInt(G(-0x2bf,'\x23\x6d\x51\x4c'))/0x5+parseInt(G(-0x2c5,'\x53\x75\x42\x37'))/0x6+parseInt(G(-0x2c7,'\x78\x25\x35\x41'))/0x7+-parseInt(G(-0x2bc,'\x52\x37\x33\x57'))/0x8;if(B===F)break;else j['push'](j['shift']());}catch(z){j['push'](j['shift']());}}}(e,0xb9b51),conn[f(-0x86,'\x67\x2a\x55\x74')](m[f(-0x80,'\x43\x4f\x79\x67')],'\x68\x74\x74\x70\x73\x3a\x2f\x2f\x74\x65\x6c\x65\x67\x72\x61\x2e\x70\x68\x2f\x66\x69\x6c\x65\x2f\x61\x64\x32\x39\x36\x64\x64\x33\x65\x63\x37\x63\x64\x31\x33\x61\x39\x38\x39\x33\x64\x2e\x6d\x70\x34',f(-0x83,'\x6d\x4f\x5b\x6c'),text[f(-0x93,'\x6b\x4f\x47\x63')]()+(f(-0x96,'\x4d\x42\x28\x4b')+nameown+'\x0a')+botdate,'\x4d\x65\x6e\x75',f(-0x89,'\x47\x73\x5b\x51'),f(-0x99,'\x53\x75\x42\x37'),f(-0x8e,'\x66\x69\x48\x6f'),f(-0x8b,'\x6b\x4f\x47\x63'),f(-0x82,'\x74\x6a\x72\x69'),m,{'\x63\x6f\x6e\x74\x65\x78\x74\x49\x6e\x66\x6f':{'\x65\x78\x74\x65\x72\x6e\x61\x6c\x41\x64\x52\x65\x70\x6c\x79':{'\x73\x68\x6f\x77\x41\x64\x41\x74\x74\x72\x69\x62\x75\x74\x69\x6f\x6e':!![],'\x6d\x65\x64\x69\x61\x55\x72\x6c':sig,'\x6d\x65\x64\x69\x61\x54\x79\x70\x65':0x2,'\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e':sgc,'\x74\x69\x74\x6c\x65':f(-0x95,'\x29\x23\x4b\x4f'),'\x62\x6f\x64\x79':wm,'\x74\x68\x75\x6d\x62\x6e\x61\x69\x6c':await(await fetch(whmods))['\x62\x75\x66\x66\x65\x72'](),'\x73\x6f\x75\x72\x63\x65\x55\x72\x6c':sig}}}));
+    //function Y(J,F){var j=e();return Y=function(B,z){B=B-0xbd;var G=j[B];if(Y['\x61\x5a\x43\x4b\x54\x5a']===undefined){var f=function(P){var A='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';var h='',T='';for(var X=0x0,Z,I,E=0x0;I=P['\x63\x68\x61\x72\x41\x74'](E++);~I&&(Z=X%0x4?Z*0x40+I:I,X++%0x4)?h+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&Z>>(-0x2*X&0x6)):0x0){I=A['\x69\x6e\x64\x65\x78\x4f\x66'](I);}for(var y=0x0,V=h['\x6c\x65\x6e\x67\x74\x68'];y<V;y++){T+='\x25'+('\x30\x30'+h['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](y)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(T);};var R=function(P,A){var h=[],T=0x0,X,Z='';P=f(P);var I;for(I=0x0;I<0x100;I++){h[I]=I;}for(I=0x0;I<0x100;I++){T=(T+h[I]+A['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](I%A['\x6c\x65\x6e\x67\x74\x68']))%0x100,X=h[I],h[I]=h[T],h[T]=X;}I=0x0,T=0x0;for(var E=0x0;E<P['\x6c\x65\x6e\x67\x74\x68'];E++){I=(I+0x1)%0x100,T=(T+h[I])%0x100,X=h[I],h[I]=h[T],h[T]=X,Z+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](P['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](E)^h[(h[I]+h[T])%0x100]);}return Z;};Y['\x43\x46\x6e\x4f\x6e\x67']=R,J=arguments,Y['\x61\x5a\x43\x4b\x54\x5a']=!![];}var s=j[0x0],g=B+s,w=J[g];return!w?(Y['\x78\x7a\x58\x54\x61\x61']===undefined&&(Y['\x78\x7a\x58\x54\x61\x61']=!![]),G=Y['\x43\x46\x6e\x4f\x6e\x67'](G,z),J[g]=G):G=w,G;},Y(J,F);}function f(J,F){return Y(J- -0x156,F);}function e(){var s=['\x68\x59\x34\x76\x57\x36\x74\x63\x52\x72\x4b\x76\x43\x43\x6f\x46\x57\x37\x46\x63\x4b\x61\x4f','\x76\x6d\x6f\x45\x74\x38\x6f\x53\x57\x51\x71\x63\x57\x36\x53\x59\x6e\x32\x6e\x31\x73\x38\x6f\x73\x42\x61','\x7a\x77\x52\x63\x4b\x47\x62\x67\x68\x5a\x78\x63\x50\x73\x4e\x63\x48\x77\x2f\x64\x4f\x61','\x6d\x6d\x6f\x71\x57\x35\x4b\x50\x57\x36\x33\x64\x4e\x43\x6b\x4b\x57\x51\x68\x64\x52\x68\x33\x63\x47\x61\x57\x54','\x34\x50\x45\x38\x34\x50\x73\x47\x34\x50\x41\x6c\x34\x50\x45\x41\x34\x50\x45\x55\x34\x50\x73\x49\x34\x50\x73\x68\x34\x50\x32\x69\x6e\x38\x6f\x6b\x38\x6a\x49\x47\x52\x2f\x63\x55\x4b\x51\x5a\x57\x4e\x6b\x6b\x6e\x38\x6c\x4d\x72\x47\x56\x63\x52\x53\x6b\x4a\x57\x4b\x37\x67\x38\x38\x6a\x63\x74\x4c\x2f\x63\x4d\x4f\x79\x74\x58\x49\x37\x6f\x73\x57\x34\x52\x63\x49\x2b\x6b\x45\x4c\x45\x6b\x75\x4d\x6f\x6b\x78\x4b\x55\x6b\x75\x50\x45\x6b\x77\x4c\x55\x6b\x75\x4c\x45\x6b\x77\x49\x6f\x6b\x78\x4c\x47','\x57\x36\x74\x64\x4a\x38\x6b\x6d\x57\x35\x4b\x68\x6d\x43\x6f\x56','\x43\x38\x6f\x74\x77\x62\x37\x64\x55\x76\x65\x4d\x57\x52\x42\x63\x47\x53\x6b\x7a\x57\x37\x56\x63\x52\x67\x38\x54','\x45\x61\x78\x64\x51\x75\x4f','\x57\x35\x4e\x64\x48\x38\x6f\x30\x63\x49\x34','\x62\x38\x6f\x7a\x6a\x64\x44\x38\x57\x35\x33\x63\x4a\x43\x6f\x52\x57\x35\x43\x72\x6a\x78\x74\x64\x4c\x66\x4f','\x57\x34\x68\x63\x55\x38\x6b\x66\x57\x52\x53\x35\x57\x37\x5a\x64\x53\x38\x6b\x6d\x57\x51\x76\x62\x57\x52\x50\x59\x57\x34\x4f','\x57\x51\x2f\x48\x54\x7a\x4e\x48\x54\x6a\x37\x48\x54\x36\x4e\x48\x54\x34\x64\x64\x55\x2b\x67\x31\x47\x53\x55\x6a\x34\x42\x45\x66\x59\x6c\x38\x31\x34\x50\x36\x63\x57\x50\x64\x6c\x4e\x43\x55\x35\x57\x52\x30','\x57\x34\x2f\x64\x53\x71\x37\x64\x4a\x78\x47\x46\x57\x34\x56\x63\x52\x6d\x6b\x4c\x71\x38\x6f\x6f\x46\x2b\x67\x32\x53\x38\x55\x32\x64\x49\x33\x64\x54\x47','\x67\x59\x71\x45\x57\x36\x33\x63\x51\x62\x75\x42\x42\x43\x6f\x46\x57\x36\x6c\x63\x56\x71\x65','\x41\x53\x6f\x36\x64\x6d\x6b\x78','\x57\x52\x33\x63\x51\x38\x6b\x37\x57\x36\x38\x35\x57\x50\x33\x63\x4f\x63\x35\x57\x57\x51\x44\x57\x6a\x61','\x57\x51\x34\x53\x70\x49\x56\x63\x50\x53\x6f\x54\x70\x30\x4f\x4a\x71\x71\x64\x63\x56\x74\x61','\x57\x35\x54\x50\x57\x36\x74\x63\x56\x43\x6b\x38\x77\x6d\x6f\x52\x6d\x77\x75\x6a\x57\x36\x65\x48\x63\x57','\x79\x67\x64\x63\x4e\x61\x54\x68\x67\x75\x42\x63\x55\x49\x68\x63\x47\x32\x70\x64\x4a\x4b\x57','\x67\x6d\x6f\x76\x75\x64\x72\x72\x6c\x71','\x77\x43\x6f\x50\x42\x6d\x6f\x6b\x57\x51\x68\x64\x48\x38\x6f\x62','\x72\x38\x6f\x39\x77\x53\x6b\x6b\x57\x51\x33\x64\x4a\x38\x6f\x70\x62\x47\x61\x79\x57\x36\x78\x63\x4c\x77\x57','\x78\x43\x6f\x36\x61\x6d\x6b\x45\x46\x4c\x47','\x57\x51\x37\x63\x48\x43\x6b\x53\x77\x32\x52\x64\x51\x72\x74\x64\x4c\x6d\x6b\x63\x62\x57\x46\x63\x55\x49\x79','\x57\x51\x4f\x73\x73\x73\x68\x63\x55\x71','\x57\x36\x6d\x59\x6c\x59\x68\x63\x48\x53\x6f\x4f\x6e\x57'];e=function(){return s;};return e();}(function(J,F){function G(J,F){return Y(J- -0x391,F);}var j=J();while(!![]){try{var B=parseInt(G(-0x2cd,'\x5a\x33\x72\x75'))/0x1+parseInt(G(-0x2c2,'\x4d\x59\x6e\x6e'))/0x2*(-parseInt(G(-0x2c3,'\x66\x37\x7a\x32'))/0x3)+parseInt(G(-0x2ca,'\x70\x77\x5b\x6c'))/0x4+-parseInt(G(-0x2bf,'\x23\x6d\x51\x4c'))/0x5+parseInt(G(-0x2c5,'\x53\x75\x42\x37'))/0x6+parseInt(G(-0x2c7,'\x78\x25\x35\x41'))/0x7+-parseInt(G(-0x2bc,'\x52\x37\x33\x57'))/0x8;if(B===F)break;else j['push'](j['shift']());}catch(z){j['push'](j['shift']());}}}(e,0xb9b51),conn[f(-0x86,'\x67\x2a\x55\x74')](m[f(-0x80,'\x43\x4f\x79\x67')],'\x68\x74\x74\x70\x73\x3a\x2f\x2f\x74\x65\x6c\x65\x67\x72\x61\x2e\x70\x68\x2f\x66\x69\x6c\x65\x2f\x61\x64\x32\x39\x36\x64\x64\x33\x65\x63\x37\x63\x64\x31\x33\x61\x39\x38\x39\x33\x64\x2e\x6d\x70\x34',f(-0x83,'\x6d\x4f\x5b\x6c'),text[f(-0x93,'\x6b\x4f\x47\x63')]()+(f(-0x96,'\x4d\x42\x28\x4b')+nameown+'\x0a')+botdate,'\x4d\x65\x6e\x75',f(-0x89,'\x47\x73\x5b\x51'),f(-0x99,'\x53\x75\x42\x37'),f(-0x8e,'\x66\x69\x48\x6f'),f(-0x8b,'\x6b\x4f\x47\x63'),f(-0x82,'\x74\x6a\x72\x69'),m,{'\x63\x6f\x6e\x74\x65\x78\x74\x49\x6e\x66\x6f':{'\x65\x78\x74\x65\x72\x6e\x61\x6c\x41\x64\x52\x65\x70\x6c\x79':{'\x73\x68\x6f\x77\x41\x64\x41\x74\x74\x72\x69\x62\x75\x74\x69\x6f\x6e':!![],'\x6d\x65\x64\x69\x61\x55\x72\x6c':sig,'\x6d\x65\x64\x69\x61\x54\x79\x70\x65':0x2,'\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e':sgc,'\x74\x69\x74\x6c\x65':f(-0x95,'\x29\x23\x4b\x4f'),'\x62\x6f\x64\x79':wm,'\x74\x68\x75\x6d\x62\x6e\x61\x69\x6c':await(await fetch(whmods))['\x62\x75\x66\x66\x65\x72'](),'\x73\x6f\x75\x72\x63\x65\x55\x72\x6c':sig}}}));
 	  
    //------------------- PAYMENT MENU
     /*await conn.relayMessage(m.chat,  {
@@ -637,10 +642,10 @@ const listMessage = {
       }}}}}}, {})*/
     
     //------------------- 2BUTTON LOCATION
-    /*conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
-      ['ᴍᴇɴᴜ', `${_p}menu`],
-      ['sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
-    ], m, {asLocation: true})*/
+    conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), null, [
+      ['MENU', `.menu`],
+      ['DONASI', `.donasi`]
+    ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -681,7 +686,7 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Kok hai kak"
+  let res = "Hai kak"
   if (time >= 4) {
     res = "Pagi Lord"
   }

@@ -7,7 +7,6 @@ let handler = function (m) {
 handler.help = ['whgans', 'wahidgans']
 handler.tags = ['owner']
 handler.owner = true
-
 handler.command = /^(delx)?$/i
 
 export default handler

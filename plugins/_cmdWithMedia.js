@@ -27,3 +27,4 @@ export async function all(m, chatUpdate) {
     }
     this.ev.emit('messages.upsert', msg)
 }
+ 

@@ -10,10 +10,10 @@ let handler = async (m, { conn, text }) => {
   let json = await res.json()
   let img = json.wallpapers[Math.floor(Math.random() * json.wallpapers.length)]
   await conn.sendButton(m.chat, `
-*${htki} FeixuanBOT WALLPAPER ${htka}*
-🔎 *Result:* ${text}
-🌎 *Sumber Asli:* https://wall.alphacoders.com
-⛩ *ɴᴀᴍᴇ ᴜꜱᴇʀ:* ${conn.getName(m.sender)}
+*${htki} XiaFeixuan-V1 WALLPAPER ${htka}*
+*Result:* ${text}
+*Sumber Asli:* https://wall.alphacoders.com
+*ɴᴀᴍᴇ ᴜꜱᴇʀ:* ${conn.getName(m.sender)}
 `, author, await(await fetch(img.url_image)).buffer(), [['Next', m.text]], m)
 }
 handler.help = ['wallpaperq <query>']

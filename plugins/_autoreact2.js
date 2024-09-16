@@ -5,13 +5,13 @@ let res = JSON.parse(readFileSync('./json/emoji.json'))
 let em = res.emoji
 
     conn.sendMessage(m.chat, {
-          react: {
+          react: {❤️
             text: em.getRandom(),
             key: m.key,
           }})
   
   }
-handler.customPrefix = /(bilek|laik|banh|nihh|tytyd|anjir|dek)/i
+handler.customPrefix = /(aldy ganteng|xian ganteng)/i
 handler.command = new RegExp
   
 handler.mods = false

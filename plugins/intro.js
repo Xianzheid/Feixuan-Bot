@@ -7,7 +7,7 @@ m.reply(`
 │ *Nama     :* 
 │ *Gender   :* 
 │ *Umur      :* 
-│ *Asal         :*
+│ *Asal        :*
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `.trim()) // Tambah sendiri kalo mau
 }
@@ -19,24 +19,23 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
-│       *「 Kartu Intro 」*
-│ *Nama     :* 
-│ *Gender   :* 
-│ *Umur      :* 
-│ *Asal         :* 
-╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
+let krtu = `
+╭───── ⋆✩
+│ Nama   :
+│ Gender :
+│ Umur    :
+╰───── ⋆✩
+
 `
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+let wibu = 'https://telegra.ph/file/7c2fccac55bdcb7603082.jpg'
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/xianzhe_xx",
-    mediaType: "IMAGE",
-    description: "https://www.instagram.com/xianzhe_xx", 
-    title: 'Feixuan-BOT V1 | MD',
+conn.sendButtonDoc(m.chat, krtu, wm,'MENU','/menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    title: 'XiaFeixuan-IV MultiDevice',
+    mediaurl : 'https://instagram.com/xianzhe_xx'
     body: wm,
+    description: Follow My Insta^~^
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sig
   }
   } }) // Tambah sendiri kalo mau
 }

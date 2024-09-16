@@ -7,11 +7,11 @@ fetch('https://raw.githubusercontent.com/arivpn/dbase/master/kpop/ukhty.txt')
 let handler = async (m, { conn }) => {
     let img = zzz[Math.floor(Math.random() * zzz.length)]
     if (!img) throw img
-    await conn.sendFile(m.chat, img, '', '© nih cecan ukhty nya jangan lupa follow instagram @xianzhe_xx✨', m, 0, { thumbnail: await (await fetch(img)).buffer() }) 
+    await conn.sendFile(m.chat, img, '', '©Cantik ya kek jodohnya $(owner)', m, 0, { thumbnail: await (await fetch(img)).buffer() }) 
     }
 handler.help = ['cecanukhty']
 handler.tags = ['internet']
-handler.limit = false
+handler.limit = true
 handler.command = /^(cecanukhty|ukhty)$/i
 
 export default handler

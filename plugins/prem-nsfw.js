@@ -36,6 +36,9 @@ let apil = '?apikey=8e66d0934cf741bfd2182c16'
 //> Xteam
 let xres = 'https://api.xteam.xyz/randomimage/'
 let xapi = '?APIKEY=ebb6251cc00f9c63'
+
+//•Xianzhe [KALO MO PAKE WM GUA JANGAN DIHAPUS SETAN:V]
+let hres = 'https://api.imgbb.com/1/upload'
 //--------------------------------
 
 // ••••••••••••••••• OPTIONS •••••••••••
@@ -84,6 +87,7 @@ let uniform = true
 let waifu = true
 let yaoi = true
 let yuri = true
+//•let gatcha =true
 
 //-------------------------------------
 
@@ -96,7 +100,7 @@ let f = 'Ⓕ | '
 
 let tekk = `\`\`\`➩ Random Image Nsfw ${args[0] ? args[0].capitalize() : false}\`\`\` `
   let teks = `┊ 📮 Silahkan Pilih Dibawah!
-┊› Atau ketik ${usedPrefix}nsfw neko
+┊› Atau ketik ${usedPrefix}nsfw hentai
 ❏──···––`
 //---------------------------
 
@@ -121,7 +125,7 @@ const sections = [
 	{title: `${(ch == true ? false : feet) == true ? p:f}` + "F • Feet", rowId: ".nsfw feet"},
 	{title: `${(ch == true ? false : femdom) == true ? p:f}` + "F • Femdom", rowId: ".nsfw femdom"},
 	{title: `${(ch == true ? false : futanari) == true ? p:f}` + "F • Futanari", rowId: ".nsfw futanari"},
-  //{title: `${(ch == true ? false : girlsolo) == true ? p:f}` + "G • Girl Solo", rowId: ".nsfw girlsolo"},
+    //•{title: `${(ch == true ? false : gatcha) == true ? p:f}` + "G • Gatcha", rowId: ".gactha"},
 	{title: `${(ch == true ? false : hentai) == true ? p:f}` + "H • Hentai", rowId: ".nsfw hentai"},
 	{title: `${(ch == true ? false : holo) == true ? p:f}` + "H • Holo", rowId: ".nsfw holo"},
 	{title: `${(ch == true ? false : jahy) == true ? p:f}` + "J • Jahy", rowId: ".nsfw jahy"},
@@ -188,7 +192,7 @@ case 'blowjob':
          if ((ch == true ? false : blowjob) == true) { 
 	     if (!isPrems) return conn.sendButton(m.chat, txtprem, botdate, [['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],['ᴏᴡɴᴇʀ', '.owner nomor']], m)
 		 }
-          let bj = await(await fetch(`https://api.waifu.pics/nsfw/blowjob`)).json()
+          let bj = await(await fetch('https://api.waifu.pics/nsfw/blowjob')).json()
           conn.sendButton(m.chat, tekk, fot, bj.url, [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
             break
             
@@ -196,7 +200,7 @@ case 'cums':
          if ((ch == true ? false : cums) == true) { 
 	     if (!isPrems) return conn.sendButton(m.chat, txtprem, botdate, [['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],['ᴏᴡɴᴇʀ', '.owner nomor']], m)
 		 }
-          conn.sendButton(m.chat, tekk, fot, await(await fetch(resl + 'cum' + apil)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
+          conn.sendButton(m.chat, tekk, fot, await(await fetch(xres + 'cum' + xapi)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
             break
             
 case 'ecchi':
@@ -276,11 +280,11 @@ case 'futanari':
           conn.sendButton(m.chat, tekk, fot, await(await fetch(res + 'futanari' + api)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
             break
             
-case 'girlsolo':
-         if ((ch == true ? false : girlsolo) == true) { 
+case 'Gatcha':
+         if ((ch == true ? false : gatcha) == true) { 
 	     if (!isPrems) return conn.sendButton(m.chat, txtprem, botdate, [['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],['ᴏᴡɴᴇʀ', '.owner nomor']], m)
 		 }
-          conn.sendButton(m.chat, tekk, fot, await(await fetch(resl + 'solo' + apil)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
+          conn.sendButton(m.chat, tekk, fot, await(await fetch(resl + 'gatcha' + apil)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
             break
             
 case 'hentai':
@@ -322,7 +326,7 @@ case 'loli':
          if ((ch == true ? false : loli) == true) { 
 	     if (!isPrems) return conn.sendButton(m.chat, txtprem, botdate, [['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],['ᴏᴡɴᴇʀ', '.owner nomor']], m)
 		 }
-          conn.sendButton(m.chat, tekk, fot, await(await fetch(res + 'loli' + api)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
+          conn.sendButton(m.chat, tekk, fot, await(await fetch(xres + 'loli' + xapi)).buffer(), [[next, `${usedPrefix}nsfw ${args[0]}`]],m)
             break
             
 case 'manga':

@@ -19,7 +19,7 @@ const inventory = {
   },
   tools: {
     armor: {
-      '0': '❌',
+      '0': '-',
       '1': 'Leather Armor',
       '2': 'Iron Armor',
       '3': 'Gold Armor',
@@ -33,7 +33,7 @@ const inventory = {
       '11': 'Hacker Armor'
     },
     sword: {
-      '0': '❌',
+      '0': '-',
       '1': 'Wooden Sword',
       '2': 'Stone Sword',
       '3': 'Iron Sword',
@@ -47,7 +47,7 @@ const inventory = {
       '11': 'Hacker Sword'
     },
     pickaxe: {
-      '0': '❌',
+      '0': '-',
       '1': 'Wooden Pickaxe',
       '2': 'Stone Pickaxe',
       '3': 'Iron Pickaxe',
@@ -101,7 +101,7 @@ let handler = async (m, { conn }) => {
   const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v]}`).filter(v => v).join('\n│ ').trim()
   const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v]}`).filter(v => v).join('\n').trim()
   const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v] >= inventory.pets[v] ? 'Max Levels' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
-  const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
+  const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? 'y|Yes' : 'n|No'}`).filter(v => v).join('\n').trim()
   const caption = `*🧑🏻‍🏫 ɴᴀᴍᴇ:* ${user.registered ? user.name : conn.getName(m.sender)}
 *▸ ᴇxᴘ:* ${user.exp}
 *▸ ʟᴇᴠᴇʟ:* ${user.level}
@@ -133,5 +133,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [ye, ' *ʏᴇᴀʀs 🗓️*\n', mo, ' *ᴍᴏɴᴛʜ 🌙*\n', d, ' *ᴅᴀʏs ☀️*\n', h, ' *ʜᴏᴜʀs 🕐*\n', m, ' *ᴍɪɴᴜᴛᴇ ⏰*\n', s, ' *sᴇᴄᴏɴᴅ ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
+  return [ye, ' *ʏᴇᴀʀs *\n', mo, ' *ᴍᴏɴᴛʜ *\n', d, ' *ᴅᴀʏs *\n', h, ' *ʜᴏᴜʀs *\n', m, ' *ᴍɪɴᴜᴛᴇ *\n', s, ' *sᴇᴄᴏɴᴅ *'].map(v => v.toString().padStart(2, 0)).join('')
 }

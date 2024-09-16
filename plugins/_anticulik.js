@@ -28,24 +28,25 @@ export async function all(m) {
         
         ╭━━━━「 PREMIUM 」
         ┊⫹⫺ Hemat: 5k (1 minggu)
-        ┊⫹⫺ Normal: 20k (1 bulan)
-        ┊⫹⫺ Pro: 40k (4 bulan)
-        ┊⫹⫺ Vip: 50k (8 bulan)                                               
-        ┊⫹⫺ Permanent: = 70k (Unlimited)
+        ┊⫹⫺ Normal: 15k (1 bulan)
+        ┊⫹⫺ Pro: 25k (4 bulan)
+        ┊⫹⫺ Vip: 40k (8 bulan)                                               
+        ┊⫹⫺ Permanent: = 50k (Unlimited)
         ╰═┅═━––––––๑
         
         ⫹⫺ PAYMENT:
-        • Pulsa Tsel: [6285326781097]
+        • Pulsa Telkomsel: [6285326781097]
         • Dana: [6285326781097]
-        • Gopay: [-]
-        
+        • Gopay: [6285326781097]
+        • Ovo: [-]
+        • Link Aja: [-]
         
         Nomor Owner :
         wa.me/6285326781097
         
         ▌│█║▌║▌║║▌║▌║█│▌
         
-        #BY FeixuanBOT-V1
+        #BY Xianzhe IV
         `.trim(), wm, 'Pemilik Bot', '.owner', m)
 await this.reply(nomorown + '@s.whatsapp.net', `Ada Yang Mau Nyulik nih :v \n\ndari: @${m.sender.split("@")[0]} \n\npesan: ${m.text}`, m, { mentions: [m.sender] })
     }
@@ -96,15 +97,8 @@ await this.reply(nomorown + '@s.whatsapp.net', `Ada Yang Mau Nyulik nih :v \n\nd
     
     // bot
     if (/^(aktif|w(ey|oi)|bot|ha[iy]|we|oy|p)$/i.test(m.text)) {
-    let apsih = ["Kenapa",
-"Ada apa",
-"Naon meng",
+    let apsih = [
 "Iya, bot disini",
-"Luwak white coffe passwordnya",
-"Hmmm, kenapa",
-"Apasih",
-"Okey bot sudah aktif",
-"2, 3 tutup botol",
 "Bot aktif"]
         let caption = `*${apsih.getRandom()}* kak ${name} @${who.split("@")[0]} 🗿`
     this.sendButton(m.chat, caption, wm, null, [[user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? '/owner' : '/menu']], m, { mentions: this.parseMention(caption) })

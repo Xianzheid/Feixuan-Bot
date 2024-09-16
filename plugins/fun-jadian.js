@@ -5,7 +5,8 @@ function handler(m, { groupMetadata }) {
     let b
     do b = ps.getRandom()
     while (b === a)
-    m.reply(`${toM(a)} ❤️ ${toM(b)}`, null, {
+    m.reply(`Command ini di ban oleh owner dikarenakan spam`)
+    /*m.reply(`${toM(a)} ❤️ ${toM(b)}`, null, {
         mentions: [a, b]
     })
 }
@@ -14,5 +15,6 @@ handler.tags = ['main', 'fun']
 handler.command = ['jadian']
 
 handler.group = true
+handler.owner = true
 
 export default handler

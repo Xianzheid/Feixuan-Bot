@@ -1,38 +1,38 @@
+<h1 align="center">Xianzhe ID</h1>
 
-## CATATAN
-Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu kakak !
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
+
 <p align="center">
-    <img src="https://telegra.ph/file/c907aa102ea9aea9ddefa.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://telegra.ph/file/73751fa7e99cfb5f92684.jpg" width="120%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">XiaFeixuan Bot - MD</h1>
+
 <p align="center">
-  <a href="https://github.com/Xianzheid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=XiaFeixuan+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+Xianzhe+ID;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
-</p> 
+  <a href="https://github.com/xianzheid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=XiaFeixuan+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+Xianzhe+ID;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
+</p>
+
 <p align="center">
-<a href="https://github.com/WH-MODS-BOT"><img title="Author" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
-    
-# Ambil Session Disini
+ <a href="#"><img title="XiaFeixuan-BOT" src="https://img.shields.io/badge/XiaFeixuan--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+</p>
+
+## Ambil Session Disini
 
 > Buka [ Linknya Disini ](https://replit.com/@zeeoneofc/Session-Md?lite=1&outputonly=1#.replit) 
 > Dan Subscribe [ Here ](https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow) 
 
 ---------
-## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
-  <a href="https://wa.me/6285326781097">
+## ```Connect With Me 📞```
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Group%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HP5Pbp9MT0eIaC5lfJgw9A)
+
+  <a href="https://wa.me/6285358805324">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/_ctzhid_">
-    <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
+  <a href="https://www.instagram.com/xianzhe_xx">
+    <img align="left" alt="SIEGRIN | Instagram" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow">
+  <a href="https://youtube.com/channel/UCZr8qo58_6ZNhvt5pYVox9A">
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
-  </a> &nbsp;&nbsp;
----------
-
-## ```Whatsapp``` <a href="https://wa.me/6282127487538"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-[![BOT WHATSAPP](https://img.shields.io/badge/Group%20All%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HQMa4AGBFKRBi4z4R0MnH4) 
----------
+  </a> &nbsp;&nbsp; 
 
 #### a little about this bot
 - [x] **Fast Respon** 
@@ -59,9 +59,9 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 
 ## `SETTING`
 
-- Owner Number [Here](https://github.com/xianzheid/FeixuanBOT/blob/master/config.js#L1)
-- Owner Name [Here](https://github.com/xianzheid/FeixuanBOT/blob/master/config.js#L1)
-- Bot Name [Here](https://github.com/xianzheid/FeixuanBOT/blob/master/config.js#L1)
+- Owner Number [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
+- Owner Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
+- Bot Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
 ---------
 
 ## ```Heroku Buildpack```
@@ -79,8 +79,8 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-$ cd fix-bot-v3
+$ git clone https://github.com/Xianzheid/XiaFeixuan-Bot
+$ cd XiaFeixuan-Bot
 $ npm i 
 ```
 If error try using yarn instead of npm, see [here](https://github.com/BochilGaming/games-wabot/tree/multi-device#if-npm-install-failed--try--using-yarn-instead-of-npm)
@@ -122,8 +122,8 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-cd fix-bot-v3
+git clone https://github.com/Xianzheid/XiaFeixuan-Bot
+cd XiaFeixuan-Bot
 npm install
 npm update
 ```
@@ -138,8 +138,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-cd fix-bot-v3
+git clone https://github.com/Xianzheid/XiaFeixuan-Bot
+cd XiaFeixuan-Bot
 npm install
 npm update
 ```
@@ -227,10 +227,6 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 
 ---------
 
-### ❗ Note : Apikeynya Beli Sendiri Ya Guys😁
-
----------
-
 ## ```Thanks to ✨```
 * [`Allah SWT`](https://github.com/WH-MODS-BOT)
 * [`My parents`](https://github.com/WH-MODS-BOT)
@@ -246,5 +242,5 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 * [`Papah-Chan`](https://github.com/FahriAdison) 
 
 ## ```Recode By ✏️```
-[![WH-MODS-BOT](https://github.com/WH-MODS-BOT.png?size=100)](https://github.com/WH-MODS-BOT), 
-[![BOT WHATSAPP](https://avatars.githubusercontent.com/u/115347633?s=96&v=4?size=35)](https://github.com/xianzheid)
+[![WH-MODS-BOT](https://github.com/WH-MODS-BOT.png?size=70)](https://github.com/WH-MODS-BOT)
+[![Xianzhe-ID](https://github.com/xianzhe-id.png?size=70)](https://github.com/Xianzhe-ID)

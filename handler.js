@@ -878,7 +878,7 @@ export async function handler(chatUpdate) {
                     if (!('antiSticker' in chat)) chat.antiSticker = false
                     if (!('antiToxic' in chat)) chat.antiToxic = false
                     if (!('detect' in chat)) chat.detect = false
-                    if (!('delete' in chat)) chat.delete = true
+                    if (!('delete' in chat)) chat.delete = false
                     if (!('getmsg' in chat)) chat.getmsg = false
                     if (!('isBanned' in chat)) chat.isBanned = false
                     if (!('lastAnime' in chat)) chat.lastAnime = false
@@ -1307,20 +1307,19 @@ export async function participantsUpdate({ id, participants, action }) {
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
      }}
-  })*/
-  let welcom = 'https://telegra.ph/file/3bb3086c5bc567a147cd4.jpg'
-
-  let godbye = 'https://telegra.ph/file/866c075e03d5751ac7d02.jpg'
-  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'WELCOME' : 'GOOD BYE', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
+  })
+  let welcom = 'https://telegra.ph/file/aab124271570c51f76aac.jpg'
+  let godbye = 'https://telegra.ph/file/deaf59bc3e5216eaae814.jpg'
+  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://www.instagram.com/xianzhe_xx/',
     mediaType: 2, 
-    description: sgc,
-    title: "Follow ig gw guys:v",
+    description: sig,
+    title: "Creator Xianzhe ID",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
      }}
-  })
+  })*/
   
                     }
                 }
@@ -1402,9 +1401,9 @@ global.dfail = (type, m, conn) => {
         //unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ', 
         restrict: '*ʀᴇsᴛʀɪᴄᴛ* • ʀᴇsᴛʀɪᴄᴛ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴅɪᴄʜᴀᴛ ɪɴɪ',
     }[type]
-    if (msg) return conn.send2ButtonDoc(m.chat, msg, author, '💌 Creator', '.creator', '🎀 Menu', '.menu', fakes, adReply)
+    if (msg) return conn.send2ButtonDoc(m.chat, msg, author, '👤 Creator', '.owner bio', '📁 Menu', '.menu', fakes, adReply)
     let msgg = {
-    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
+    	unreg: 'ᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
 }

@@ -44,10 +44,10 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
         }
         return await conn.sendMessage(m.chat, message)*/
 conn.reply(m.chat, info, m, { quoted: fkontak },{ contextInfo: { externalAdReply: { showAdAttribution: true,
-      mediaUrl: "https://github.com/xianzhe2",
+      mediaUrl: "https://github.com/xianzheid",
       mediaType: 2,
-      description: "https://github.com/xianzhe2", 
-      title: 'FeixuanBOT-V1 | MD',
+      description: "https://github.com/xianzheid", 
+      title: 'XiaFeixuan-MultiDevice',
       body: wm,
       thumbnail: thumb,
       sourceUrl: sig  }}})

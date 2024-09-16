@@ -1,4 +1,4 @@
-let { MessageType } = (await import('@adiwajshing/baileys')).default
+/*let { MessageType } = (await import('@adiwajshing/baileys')).default
 let handler = async (m, { conn, args, text }) => {
     conn.req = conn.req ? conn.req : {}
     if (!args || !text) return m.reply('Silahkan Masukan Teksnya')
@@ -25,3 +25,4 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+*/

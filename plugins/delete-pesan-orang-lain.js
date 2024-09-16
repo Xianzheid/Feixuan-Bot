@@ -4,10 +4,9 @@ let handler = function (m) {
     if (!fromMe) throw true
     conn.sendMessage(chat, { delete: m.quoted.vM.key })
 }
-handler.help = ['Xia Feixuan', 'Xianzhe ID]
+handler.help = ['whgans', 'wahidgans']
 handler.tags = ['owner']
 handler.owner = true
-
-handler.command = /^('Feixuan|Xianzhe')?$/i
+handler.command = /^(delx)?$/i
 
 export default handler

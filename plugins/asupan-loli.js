@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text }) => {
+/*let handler = async (m, { conn, text }) => {
     let yh = global.asupan
     let url = yh[Math.floor(Math.random() * yh.length)]
     conn.sendButton(m.chat, 'Gada Banh', 'btw Xianzhe ganteng:v', url, [['NEXT', '.asupanloli']], m)
@@ -51,4 +51,4 @@ handler.register = true
   "https://storage.caliph71.xyz/asupan/tiktok/136.mp4",
   "https://storage.caliph71.xyz/asupan/tiktok/137.mp4",
   "https://storage.caliph71.xyz/asupan/tiktok/138.mp4"
-]
+]*/
